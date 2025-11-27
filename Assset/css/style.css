@@ -222,7 +222,7 @@ overflow: hidden;
     }
 
     .worldwide {
-        width: 350px;
+        width: 360px;
         max-width: 540px;
         height: 70px;
         background-color: #6f180c5e;
@@ -362,10 +362,11 @@ overflow: hidden;
         }
 
         .worldwide {
-            width: 320px;
+            width: 343px;
             height: 75px;
             top: 460px;
             left: 900px;
+            gap: 80px;
 
             img {
                 width: 30px;
