@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintner's Corner</title>
+    <link rel="stylesheet" href="./Assset/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="#" class="logo"><img src="./Assset/icons/20251127_160001.png" alt=""></a>
+        </div>
+
+        <div class="mobile">
+
+            <ul class="MobileMenu">
+                <li ondblclick=hideMobileMenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+
+            </ul>
+
+        </div>
+
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+
+            </ul>
+        </nav>
+        <div class="mobile-hanburger">
+            <li onclick=showMobileMenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px"
+                        viewBox="0 -960 960 960" width="34px" fill="#e3e3e3">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+
+        </div>
+
+        <div>
+            <i class="fa-solid fa-basket-shopping" color="white"></i>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <video class="desktop-video" autoplay muted poster="">
+                <source src="./Assset/video/InShot_20251127_095605180.mp4" type="video/mp4">
+            </video>
+
+            <video class="hero-video-mobile" autoplay muted poster="">
+                <source src="./Assset/video/InShot_20251127_092111554.mp4">
+            </video>
+            <div class="name">
+                Vintner's
+            </div>
+            <div class="hero-content fadein">
+                <div>
+                    <h2>Vintner's Corner Wine Store</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima beatae obcaecati cumque sequi
+                        illum!</p>
+                    <a href="#" class="btn">Explore Products</a>
+                </div>
+
+            </div>
+
+
+            <div class="box fadein">
+                <div class="box1">
+                    <h3>90%</h3>
+                    <p>Fully Satisfied Customers</p>
+                </div>
+                <div class="box1">
+                    <h3>100%</h3>
+                    <p>Safe Delivered Drinks</p>
+                </div>
+            </div>
+            <div class="worldwide fadein">
+                <div>
+                    <img src="./Assset/images/4168550_image31540x540_jpeg_jpeg4bd099a80439522e8d0724f1ef8229ad.jpeg"
+                        alt="" class="img1">
+                    <img src="./Assset/images/Enugu_state_Coat_of_Arms.jpg" alt="" class="img2">
+                    <img src="./Assset/images/images (8) (15).jpeg" alt="" class="img3">
+                    <img src="./Assset/images/images (8) (16).jpeg" alt="" class="img4">
+                    <img src="./Assset/images/images (8) (17).jpeg" alt="" class="img5">
+
+                </div>
+
+                <div>
+                    <img src="./Assset/images/BackgroundEraser_20251127_153725743.png" alt="" class="star">
+                    <p>100M Nigeria Users</p>
+                </div>
+            </div>
+            </div>
+
+
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function showMobileMenu() {
+            const MobileMenu = document.querySelector('.MobileMenu');
+            MobileMenu.style.display = 'flex';
+        }
+        function hideMobileMenu() {
+            const MobileMenu = document.querySelector('.MobileMenu');
+            MobileMenu.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
