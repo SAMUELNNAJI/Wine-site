@@ -369,6 +369,11 @@ svg {
         margin-top: 30px;
         gap: 10px;
         padding: 20px;
+        transition: transform 3s ease;
+    }
+
+    .product:hover {
+     transform: scale(1.02);
     }
 
     img {
@@ -404,6 +409,8 @@ svg {
 
 /* Process section */
 .process{
+/* background-color: #ff7c50; */
+border-radius: 20px;
 display: flex;
 justify-content: space-between;
 padding: 20px;
