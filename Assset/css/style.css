@@ -433,6 +433,32 @@ gap: 20px;
 }
 }
 
+.sponsors{
+margin-top: 90px;
+
+.sponsors-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    opacity: 0.5;
+}
+
+ p{
+    margin-bottom: 40px;
+}
+
+}
+
+
+
+
 @media (max-width:1150px) {
    
     .desktop-menu {
