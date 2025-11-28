@@ -137,7 +137,7 @@ header {
     background-color: #475b6459;
     display: none;
     flex-direction: column;
-    width: 330px;
+    width: 270px;
     height: 100vh;
     align-items: center;
     border: #79483E 2px solid;
@@ -150,7 +150,7 @@ header {
 
 .MobileMenu a:hover {
     background-color: #79483E;
-    padding: 7px 100px;
+    padding: 9px 80px;
     border-radius: 100px;
     box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.525);
 }
@@ -523,6 +523,7 @@ svg {
         width: 200px;
         height: 180px;
         margin-bottom: 10px;
+        
     }
 
     h3 {
