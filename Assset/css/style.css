@@ -574,7 +574,7 @@ svg {
     button {
         display: block;
         margin: auto;
-        width: 300px;
+        width: 280px;
         border: none;
         padding: 10px 20px;
         font-size: 17px;
@@ -584,7 +584,7 @@ svg {
     input {
         display: block;
         margin: auto;
-        width: 300px;
+        width: 280px;
         height: 40px;
         border-radius: 18px;
         margin-bottom: -18px;
