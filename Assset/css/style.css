@@ -56,6 +56,7 @@
     color: #fdf6ea;
     box-shadow: #00000050 2px 2px 2px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.7s ease;
 }
 
 * {
@@ -69,7 +70,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     background-color:#fefcfc;
+    background-color: #fefcfc;
 }
 
 
@@ -165,9 +166,6 @@ svg {
     position: relative;
     overflow: hidden;
 
-
-
-
     .hero-content {
         position: absolute;
         top: 100px;
@@ -180,9 +178,6 @@ svg {
 
     .hero-video-mobile {
         width: 100%;
-        position: absolute;
-        top: 0;
-        z-index: -1;
         object-fit: cover;
         border-radius: 0 0 32px 32px;
     }
@@ -303,23 +298,6 @@ svg {
 
 /* Seller Section */
 .seller {
-    position: relative;
-    width: 100vw;
-    height: auto;
-    
-   
-
-    .seller-container {
-        position: absolute;
-        top: -100px;
-        width: 100vw;
-         z-index: 1;
-    }
-
-    .title {
-        position: relative;
-    }
-
     h3 {
         font-size: clamp(30px, 6vw, 40px);
         color: #E4420A;
@@ -343,6 +321,7 @@ svg {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: baseline;
     }
 
     h4 {
@@ -365,7 +344,7 @@ svg {
         border: 1.5px solid rgb(255, 255, 255);
         padding: 10px;
         border-radius: 12px;
-        box-shadow: 2px 2px 7px 2px  rgba(0, 0, 0, 0.228);
+        box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.228);
         margin-top: 30px;
         gap: 10px;
         padding: 20px;
@@ -373,7 +352,7 @@ svg {
     }
 
     .product:hover {
-     transform: scale(1.02);
+        transform: scale(1.02);
     }
 
     img {
@@ -402,103 +381,279 @@ svg {
         height: 20px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
     }
+
     .product p {
         text-align: center;
         font-size: clamp(12px, 4vw, 15px);
-}
+    }
 
-/* Process section */
-.process{
-/* background-color: #ff7c50; */
-border-radius: 20px;
-display: flex;
-justify-content: space-between;
-padding: 20px;
-flex-wrap: wrap;
-align-items: center;
-margin-top: 60px;
-gap: 20px;
-}
+    /* Process section */
+    .process {
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 60px;
+        gap: 20px;
+    }
 
 
-.process p{
-    max-width: 500px;
-    text-align: left;
-    margin-bottom: 30px;
-}
+    .process p {
+        max-width: 500px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
 
-.process h3{
-   max-width: 500px;
-   text-align: left;
+    .process h3 {
+        max-width: 500px;
+        text-align: left;
 
-}
+    }
 
-.process img{
-    width: 300px;
-    height: 400px;
+    .process img {
+        width: 300px;
+        height: 400px;
 
-}
+    }
 }
 
 /* Sponsors section */
-.sponsors{
-margin-top: 90px;
-
-.sponsors-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-img{
-    width: 150px;
+.sponsors {
+    margin-top: 90px;
+    position: relative;
+    width: 100%;
     height: auto;
-    opacity: 0.5;
-}
 
- p{
-    margin-bottom: 40px;
-}
+    .sponsors-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+        opacity: 0.5;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
 
 }
 
 /* Blog Section */
-.blog{
-margin-top: 50px;
+.blog {
+    margin-top: 50px;
+     position: relative;
+    width: 100%;
+    height: auto;
 
-    .blog-container{
+    .blog-container {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 30px;
     }
 
-    .blog-post p{
+    .blog-post p {
         max-width: 250px;
         margin-bottom: 30px;
         font-size: clamp(10px, 4vw, 13px);
     }
 
-    .blog-post h4{
+    .blog-post h4 {
         max-width: 250px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
 
-    .blog-post button{
-     border: none;
-     display: block;
-     margin: auto;
+    .blog-post button {
+        border: none;
+        display: block;
+        margin: auto;
     }
+}
+
+/* what-people-say-about-us */
+
+.what-people-say-about-us {
+    
+    .carousel {
+        margin: 100px auto;
+        width: 90%;
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .group {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 1em;
+        animation: infinite-scroll 17s infinite linear;
+    }
+
+
+    .card {
+        flex: 0 0 5em;
+        height: 10em;
+        font-size: 3rem;
+        border-radius: 2em;
+        text-align: center;
+        align-content: center;
+    }
+
+    h5 {
+        font-size: clamp(20px, 3vw, 30px);
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: clamp(14px, 2vw, 10px);
+    }
+
+    .card img {
+        width: 200px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-top: 70px;
+        padding-inline: 15px;
+    }
+
+    #p1 {
+        margin-bottom: -90px;
+    }
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }
 
 
 
+@keyframes infinite-scroll {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.Subscribe {
+
+    .container {
+        display: block;
+        background-color: #5f0e03;
+        backdrop-filter: blur(10px);
+        width: 90%;
+        margin: auto;
+        border-radius: 32px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 4px 3px rgba(200, 196, 196, 0.664);
+    }
+
+    .email {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    button {
+        display: block;
+        margin: auto;
+        width: 300px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 40px;
+        border-radius: 18px;
+        margin-bottom: -18px;
+        margin-top: 20px;
+        padding-inline: 10px;
+        border: none;
+    }
+
+    h4 {
+        color: #fdf6ea;
+        font-size: clamp(20px, 8vw, 35px);
+        max-width: 100%;
+
+    }
+
+    p {
+        font-size: clamp(12px, 5vw, 14px);
+        color: #fdf6ea;
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    .footer-container {
+        background-color: #D63E0D;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: 500;
+        color: #fdf6ea;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    p{
+        font-weight: 600;
+        color: #fcece6;
+    }
+
+    h4{
+        color: #511502;
+        font-size: 1.3rem;
+    }
+    .logo img {
+        width: 300px;
+    }
+
+    .logo p {
+        max-width: 300px;
+    }
+}
 
 @media (max-width:1150px) {
-   
+
     .desktop-menu {
         display: none;
     }
@@ -508,10 +663,15 @@ margin-top: 50px;
         gap: 50px;
     }
 
-    .blog-container{
-         gap: 60px;
+    .blog-container {
+        gap: 60px;
     }
 
+      .footer-container{
+               padding: 20px;
+    }
+
+   
 }
 
 @media (min-width: 1200px) {
@@ -641,17 +801,22 @@ margin-top: 50px;
 
     }
 
-    .product{
+    .product {
         margin-inline: 60px;
     }
 
-    .process{
+    .process {
         margin-inline: 40px;
     }
 
-    .blog-container{
+    .blog-container {
         margin-inline: 60px;
-       
+
     }
 
+    footer{
+        .footer-container{
+             padding-inline: 80px;
+        }
+    }
 }
