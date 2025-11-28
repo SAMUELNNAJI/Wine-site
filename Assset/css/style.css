@@ -69,6 +69,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color:#fefcfc;
 }
 
 
@@ -305,11 +306,14 @@ svg {
     position: relative;
     width: 100vw;
     height: auto;
+    
+   
 
     .seller-container {
         position: absolute;
         top: -100px;
         width: 100vw;
+         z-index: 1;
     }
 
     .title {
@@ -402,6 +406,7 @@ svg {
 
 
 @media (max-width:1150px) {
+   
     .desktop-menu {
         display: none;
     }
