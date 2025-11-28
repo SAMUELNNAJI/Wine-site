@@ -13,6 +13,24 @@
     }
 }
 
+.color-scroll{
+    animation: color-scroll 5s ease infinite ;
+}
+
+@keyframes color-scroll {
+    0%{
+        color: #D63E0D;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        color: #511502;
+        transform: translateX(100%);
+    }
+}
+
+
+
 .fadein {
     opacity: 0;
     animation: fadein 2s forwards 8s;
@@ -141,26 +159,31 @@ svg {
 
 /* hero section */
 .hero {
-overflow: hidden;
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
 
-   
-  
-.hero-content {
-    position: absolute;
-    top: 100px;
-    padding: 10px;
-}
 
-     .desktop-video {
+
+
+    .hero-content {
+        position: absolute;
+        top: 100px;
+        padding: 10px;
+    }
+
+    .desktop-video {
         display: none;
     }
 
-      .hero-video-mobile {
+    .hero-video-mobile {
         width: 100%;
         position: absolute;
         top: 0;
         z-index: -1;
         object-fit: cover;
+        border-radius: 0 0 32px 32px;
     }
 
     h2 {
@@ -181,14 +204,14 @@ overflow: hidden;
         margin-bottom: 30px;
     }
 
-      .name {
-            position: absolute;
-            font-size: 80px;
-            font-weight: 900;
-            top: 40%;
-            left: 20px;
-            opacity: 0.1;
-        }
+    .name {
+        position: absolute;
+        font-size: 80px;
+        font-weight: 900;
+        top: 40%;
+        left: 20px;
+        opacity: 0.1;
+    }
 
     .box {
         display: flex;
@@ -198,8 +221,9 @@ overflow: hidden;
         top: 430px;
         left: 10px;
         padding-right: 20px;
+
         .box1 {
-            min-width: 140px,370px;
+            min-width: 140px, 370px;
             /* width: 140px; */
             height: 110px;
             background-color: #6f180c5e;
@@ -221,7 +245,7 @@ overflow: hidden;
     }
 
     .worldwide {
-        width: 330px;
+        width: 360px;
         max-width: 540px;
         height: 70px;
         background-color: #6f180c5e;
@@ -277,22 +301,41 @@ overflow: hidden;
 
 
 /* Seller Section */
-.seller{
+.seller {
     position: relative;
+    width: 100vw;
+    height: auto;
 
     .seller-container{
         position: absolute;
-        top: 100%;
-        h3{
-            text-align: center;
-            font-size: 36px;
-            margin-top: 100px;
-            margin-bottom: 10px;
-            color: #fff;
-        }
+        top: -100px;
+        width: 100vw;
     }
 
+    .title{
+        position: relative;
+    }
+    h3{
+        font-size: clamp(30px, 6vw, 40px);
+        color: #E4420A;
+        text-align: center;
+    }
+
+      hr{
+        width: 100px;
+        display: block;
+        margin: auto;
+        border: #210C0C 2px solid;
+      }
+
+    p{
+         text-align: center;
+          font-size: clamp(16px, 6vw, 20px);
+          font-weight: 500;
+    }
 }
+
+
 @media (max-width:1150px) {
     .desktop-menu {
         display: none;
@@ -312,24 +355,25 @@ overflow: hidden;
     }
 
     .hero {
-        
-      
 
-       
-        
+
+
+
+
         .desktop-video {
             display: block;
             width: 100vw;
             position: absolute;
+            border-radius: 0 0 52px 52px;
             top: 0;
             z-index: -1;
         }
 
-         .hero-video-mobile {
+        .hero-video-mobile {
             display: none;
         }
 
-          .name {
+        .name {
             position: absolute;
             font-size: 250px;
             font-weight: 900;
@@ -337,7 +381,7 @@ overflow: hidden;
             left: 60px;
             opacity: 0.1;
         }
-        
+
 
         .hero-content {
             position: absolute;
@@ -378,7 +422,7 @@ overflow: hidden;
         }
 
         .worldwide {
-            width: 343px;
+            width: 360px;
             height: 75px;
             top: 460px;
             left: 900px;
@@ -419,6 +463,16 @@ overflow: hidden;
                 margin-top: -10px;
             }
         }
+    }
+
+    /* Seller section */
+    .seller{
+        .seller-container{
+            position: absolute;
+            top: -50px;
+        }
+        
+
     }
 
 }
