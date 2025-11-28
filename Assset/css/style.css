@@ -471,7 +471,6 @@ margin-top: 50px;
     .blog-container{
         display: flex;
         justify-content: space-around;
-        gap: 30px;
         flex-wrap: wrap;
         margin-top: 30px;
     }
@@ -507,6 +506,10 @@ margin-top: 50px;
     header {
         justify-content: space-around;
         gap: 50px;
+    }
+
+    .blog-container{
+         gap: 60px;
     }
 
 }
@@ -644,6 +647,11 @@ margin-top: 50px;
 
     .process{
         margin-inline: 40px;
+    }
+
+    .blog-container{
+        margin-inline: 60px;
+       
     }
 
 }
