@@ -38,7 +38,7 @@
 
 .btn {
     background-color: #D63E0D;
-    padding: 9px 10px;
+    padding: 9px 15px;
     text-decoration: none;
     font-weight: 600;
     border-radius: 18px;
@@ -49,7 +49,7 @@
 
 .btn:hover {
     background-color: #210C0C;
-    padding: 9px 10px;
+    padding: 9px 15px;
     text-decoration: none;
     font-weight: 600;
     border-radius: 18px;
@@ -368,7 +368,7 @@ svg {
         box-shadow: 2px 2px 7px 2px  rgba(0, 0, 0, 0.228);
         margin-top: 30px;
         gap: 10px;
-        margin-inline: 60px;
+        padding: 20px;
     }
 
     img {
@@ -402,8 +402,36 @@ svg {
         font-size: clamp(12px, 4vw, 15px);
 }
 
+/* Process section */
+.process{
+display: flex;
+justify-content: space-between;
+padding: 20px;
+flex-wrap: wrap;
+align-items: center;
+margin-top: 60px;
+gap: 20px;
 }
 
+
+.process p{
+    max-width: 500px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.process h3{
+   max-width: 500px;
+   text-align: left;
+
+}
+
+.process img{
+    width: 300px;
+    height: 400px;
+
+}
+}
 
 @media (max-width:1150px) {
    
@@ -543,6 +571,14 @@ svg {
         }
 
 
+    }
+
+    .product{
+        margin-inline: 60px;
+    }
+
+    .process{
+        margin-inline: 40px;
     }
 
 }
