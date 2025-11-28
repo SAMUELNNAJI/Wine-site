@@ -440,6 +440,7 @@ gap: 20px;
 }
 }
 
+/* Sponsors section */
 .sponsors{
 margin-top: 90px;
 
@@ -461,6 +462,37 @@ img{
     margin-bottom: 40px;
 }
 
+}
+
+/* Blog Section */
+.blog{
+margin-top: 50px;
+
+    .blog-container{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .blog-post p{
+        max-width: 250px;
+        margin-bottom: 30px;
+        font-size: clamp(10px, 4vw, 13px);
+    }
+
+    .blog-post h4{
+        max-width: 250px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .blog-post button{
+     border: none;
+     display: block;
+     margin: auto;
+    }
 }
 
 
