@@ -227,6 +227,7 @@ svg {
         margin-bottom: 20px;
         font-weight: 600;
         font-size: clamp(17px,3.5vw,18px);
+        padding-top: 10px;
     }
 
     input{
