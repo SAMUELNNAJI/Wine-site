@@ -156,7 +156,7 @@ header {
 }
 
 svg {
-    fill: #e2501f;
+    fill: #D63E0D;
     
 }
 
@@ -544,11 +544,11 @@ svg {
 
 @keyframes infinite-scroll {
     from {
-        translate: 0;
+        translate: -100%;
     }
 
     to {
-        translate: -100%;
+        translate: 0%;
     }
 }
 
