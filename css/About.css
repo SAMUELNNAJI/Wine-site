@@ -205,7 +205,7 @@ svg {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
             flex-wrap: wrap;
             margin-inline:60px ;
             margin-bottom: 20px;
@@ -243,7 +243,7 @@ svg {
         .box{
             width: 350px;
             background-image: linear-gradient(45deg,#5F0E03,#5F0E03,#D63E0D);
-            height: 290px;
+            height: 320px;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 2px 2px 8px 4px rgb(194, 194, 194);
@@ -389,6 +389,17 @@ footer {
              padding-inline: 80px;
         }
     }
+
+    .Values{
+        .value-container{
+             gap: 20px;
+        }
+        .box{
+             height: 270px;
+        }
+    }
+
+
     .Service{
 
         .Our-Service{
