@@ -192,6 +192,13 @@ svg {
     }
 }
 
+  hr {
+        width: 100px;
+        display: block;
+        margin: auto;
+        border: #210C0C 2px solid;
+    }
+
 .Contact-section{
     .Contact-container{
         margin: 20px;
@@ -221,12 +228,7 @@ svg {
         max-width: 500PX;
     }
 
-     hr {
-        width: 100px;
-        display: block;
-        margin: auto;
-        border: #210C0C 2px solid;
-    }
+   
 
     p{
         text-align: center;
