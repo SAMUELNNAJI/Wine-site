@@ -266,6 +266,10 @@ svg {
             box-shadow: 2px 2px 8px 4px rgb(194, 194, 194);
         }
 
+         img{
+            width: 300px;
+        }
+
         h3{
             font-size: clamp(25px,4vw,30px);
             margin-bottom: 20px;
