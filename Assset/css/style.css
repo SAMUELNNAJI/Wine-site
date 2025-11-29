@@ -652,6 +652,20 @@ footer {
     .logo p {
         max-width: 300px;
     }
+
+    .Contact img{
+      width: 30px;
+      height: 30px;
+    }
+    /* .Contact img {
+filter: invert(9%) sepia(84%) saturate(3300%) hue-rotate(354deg) brightness(82%) contrast(110%);
+} */
+
+    .contact-us{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
 }
 
 @media (max-width:1150px) {
