@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Assset/css/Contact-Us.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./index.html" class="logo"><img src="/Assset/icons/20251129_060926.png" alt=""></a>
+        </div>
+
+        <div class="mobile">
+
+            <ul class="MobileMenu">
+                <li ondblclick=hideMobileMenu()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+
+            </ul>
+
+        </div>
+
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+
+            </ul>
+        </nav>
+        <div class="mobile-hanburger">
+            <li onclick=showMobileMenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px"
+                        viewBox="0 -960 960 960" width="34px" fill="#e3e3e3">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+
+        </div>
+
+        <div>
+            <i class="fa-solid fa-basket-shopping" color="white"></i>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h2>Contact-Us</h2>
+            <p>Have a question or need a little guidance? We’re here to help.
+                Send us a message and our team at Vintner’s Corner will get back to you as soon as possible. Cheers!</p>
+        </section>
+        <section class="Contact-section">
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function showMobileMenu() {
+            const MobileMenu = document.querySelector('.MobileMenu');
+            MobileMenu.style.display = 'flex';
+        }
+        function hideMobileMenu() {
+            const MobileMenu = document.querySelector('.MobileMenu');
+            MobileMenu.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
