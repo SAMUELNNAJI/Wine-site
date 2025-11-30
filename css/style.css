@@ -242,8 +242,8 @@ svg {
     }
 
     .worldwide {
-        width: 330px;
-        max-width: 540px;
+        max-width: 92vw;
+        width: 92vw;
         height: 70px;
         background-color: #6f180c5e;
         backdrop-filter: blur(100px);
@@ -299,6 +299,7 @@ svg {
 
 /* Seller Section */
 .seller {
+    margin-top: -50px;
     h3 {
         font-size: clamp(30px, 6vw, 40px);
         color: #E4420A;
@@ -828,6 +829,7 @@ filter: invert(9%) sepia(84%) saturate(3300%) hue-rotate(354deg) brightness(82%)
 
     /* Seller section */
     .seller {
+           margin-top: -10px;
         .seller-container {
             position: absolute;
             top: -50px;
