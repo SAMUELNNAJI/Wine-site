@@ -157,19 +157,19 @@ header {
 
 svg {
     fill: #D63E0D;
-    
+
 }
 
 
-.hero-section{
+.hero-section {
     width: 100%;
     height: 50vh;
-    background-image:url(../Assset/images/page-hero.webp);
-    background-position:bottom;
+    background-image: url(../Assset/images/page-hero.webp);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 
-    h2{
+    h2 {
         color: #fdf6ea;
         font-size: 48px;
         font-weight: 700;
@@ -178,7 +178,7 @@ svg {
         text-shadow: 2px 2px 4px #000000b3;
     }
 
-    p{
+    p {
         color: #fdf6ea;
         font-size: clamp(16px, 2.5vw, 18px);
         font-weight: 500;
@@ -192,15 +192,15 @@ svg {
     }
 }
 
-  hr {
-        width: 100px;
-        display: block;
-        margin: auto;
-        border: #210C0C 2px solid;
-    }
+hr {
+    width: 100px;
+    display: block;
+    margin: auto;
+    border: #210C0C 2px solid;
+}
 
-.Contact-section{
-    .Contact-container{
+.Contact-section {
+    .Contact-container {
         margin: 20px;
         display: flex;
         justify-content: space-between;
@@ -209,37 +209,37 @@ svg {
         gap: 40px;
     }
 
-    .contact{
+    .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    button{
+    button {
         width: 300px;
         font-size: 18px;
         border: none;
     }
 
-    h3{
+    h3 {
         color: #D63E0D;
-        font-size: clamp(25px,4vw,35px);
+        font-size: clamp(25px, 4vw, 35px);
         text-align: center;
         max-width: 500PX;
     }
 
-   
 
-    p{
+
+    p {
         text-align: center;
         max-width: 400px;
         margin-bottom: 20px;
         font-weight: 600;
-        font-size: clamp(17px,3.5vw,18px);
+        font-size: clamp(17px, 3.5vw, 18px);
         padding-top: 10px;
     }
 
-    input{
+    input {
         width: 300px;
         height: 40px;
         border-radius: 12px;
@@ -247,8 +247,8 @@ svg {
         padding-inline: 10px;
     }
 
-    .map{
-       
+    .map {
+
         overflow-x: hidden;
     }
 }
@@ -257,6 +257,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
+    margin-bottom: -70px;
 
     .footer-container {
         background-color: #D63E0D;
@@ -264,16 +265,16 @@ footer {
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-between;
+        justify-content: space-between;
         gap: 20px;
         padding: 20px;
     }
 
-    ul{
+    ul {
         list-style: none;
     }
 
-    a{
+    a {
         text-decoration: none;
         font-weight: 500;
         color: #fdf6ea;
@@ -281,15 +282,16 @@ footer {
         line-height: 30px;
     }
 
-    p{
+    p {
         font-weight: 600;
         color: #fcece6;
     }
 
-    h4{
+    h4 {
         color: #511502;
         font-size: 1.3rem;
     }
+
     .logo img {
         width: 300px;
     }
@@ -298,16 +300,29 @@ footer {
         max-width: 300px;
     }
 
-    .Contact img{
-      width: 30px;
-      height: 30px;
+    .Contact img {
+        width: 30px;
+        height: 30px;
     }
-   
-    .contact-us{
+
+    .contact-us {
         display: flex;
         align-items: center;
         gap: 3px;
     }
+}
+
+/* Floating */
+.floating-top {
+    width: 100%;
+    position: sticky;
+    bottom: 10px;
+}
+
+.floating-top img {
+    position: relative;
+    left: 85vw;
+    width: 40px;
 }
 
 @media (max-width:1150px) {
@@ -325,11 +340,11 @@ footer {
         gap: 60px;
     }
 
-      .footer-container{
-               padding: 20px;
+    .footer-container {
+        padding: 20px;
     }
 
-   
+
 }
 
 @media (min-width: 1200px) {
@@ -338,10 +353,16 @@ footer {
         display: none;
     }
 
-     footer{
-        .footer-container{
-             padding-inline: 80px;
+    footer {
+        .footer-container {
+            padding-inline: 80px;
         }
+    }
+
+    .floating-top img {
+        position: relative;
+        left: 94vw;
+        width: 40px;
     }
 
 }

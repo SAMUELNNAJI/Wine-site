@@ -305,6 +305,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
+    margin-bottom: -70px;
 
     .footer-container {
         background-color: #D63E0D;
@@ -357,6 +358,19 @@ footer {
         align-items: center;
         gap: 3px;
     }
+}
+
+/* Floating */
+.floating-top {
+    width: 100%;
+    position: sticky;
+    bottom: 10px;
+}
+
+.floating-top img {
+    position: relative;
+    left: 85vw;
+    width: 40px;
 }
 
 @media (max-width:1150px) {
@@ -418,4 +432,9 @@ footer {
         }
     }
 
+    .floating-top img {
+        position: relative;
+        left: 94vw;
+        width: 40px;
+    }
 }

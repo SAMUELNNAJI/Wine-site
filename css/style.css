@@ -75,7 +75,7 @@ body {
 
 
 header {
-    position: fixed;
+    position: absolute;
     top: 20px;
     width: 100vw;
     display: flex;
@@ -157,7 +157,7 @@ header {
 
 svg {
     fill: #D63E0D;
-    
+
 }
 
 /* hero section */
@@ -450,7 +450,7 @@ svg {
 /* Blog Section */
 .blog {
     margin-top: 50px;
-     position: relative;
+    position: relative;
     width: 100%;
     height: auto;
 
@@ -483,7 +483,7 @@ svg {
 /* what-people-say-about-us */
 
 .what-people-say-about-us {
-    
+
     .carousel {
         margin: 100px auto;
         width: 90%;
@@ -575,7 +575,7 @@ svg {
     button {
         display: block;
         margin: auto;
-        width: 280px;
+        width: 16.5em;
         border: none;
         padding: 10px 20px;
         font-size: 17px;
@@ -586,7 +586,7 @@ svg {
     input {
         display: block;
         margin: auto;
-        width: 280px;
+        width: 21em;
         height: 40px;
         border-radius: 18px;
         margin-bottom: -18px;
@@ -612,6 +612,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
+    margin-bottom: -70px;
 
     .footer-container {
         background-color: #D63E0D;
@@ -619,16 +620,16 @@ footer {
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-between;
+        justify-content: space-between;
         gap: 20px;
         padding: 20px;
     }
 
-    ul{
+    ul {
         list-style: none;
     }
 
-    a{
+    a {
         text-decoration: none;
         font-weight: 500;
         color: #fdf6ea;
@@ -636,15 +637,16 @@ footer {
         line-height: 30px;
     }
 
-    p{
+    p {
         font-weight: 600;
         color: #fcece6;
     }
 
-    h4{
+    h4 {
         color: #511502;
         font-size: 1.3rem;
     }
+
     .logo img {
         width: 300px;
     }
@@ -653,19 +655,36 @@ footer {
         max-width: 300px;
     }
 
-    .Contact img{
-      width: 30px;
-      height: 30px;
+    .Contact img {
+        width: 30px;
+        height: 30px;
     }
+
     /* .Contact img {
 filter: invert(9%) sepia(84%) saturate(3300%) hue-rotate(354deg) brightness(82%) contrast(110%);
 } */
 
-    .contact-us{
+    .contact-us {
         display: flex;
         align-items: center;
         gap: 3px;
     }
+
+
+
+}
+
+/* Floating */
+.floating-top {
+    width: 100%;
+    position: sticky;
+    bottom: 10px;
+}
+
+.floating-top img {
+    position: relative;
+    left: 85vw;
+    width: 40px;
 }
 
 @media (max-width:1150px) {
@@ -683,11 +702,11 @@ filter: invert(9%) sepia(84%) saturate(3300%) hue-rotate(354deg) brightness(82%)
         gap: 60px;
     }
 
-      .footer-container{
-               padding: 20px;
+    .footer-container {
+        padding: 20px;
     }
 
-   
+
 }
 
 @media (min-width: 1200px) {
@@ -830,9 +849,15 @@ filter: invert(9%) sepia(84%) saturate(3300%) hue-rotate(354deg) brightness(82%)
 
     }
 
-    footer{
-        .footer-container{
-             padding-inline: 80px;
+    footer {
+        .footer-container {
+            padding-inline: 80px;
         }
     }
+
+    .floating-top img {
+    position: relative;
+    left: 94vw;
+    width: 40px;
+}
 }
