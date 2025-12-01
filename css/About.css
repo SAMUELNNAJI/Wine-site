@@ -482,7 +482,7 @@ footer {
     .teams {
         width: 290px;
         height: 350px;
-        border: #210C0C 2px solid;
+        border:#5F0E03 2px solid;
         border-radius: 12px;
           padding: 20px;
           box-shadow: 2px 2px 12px 2px rgb(210, 210, 210);
@@ -491,7 +491,6 @@ footer {
     .content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
 
     .content p {
