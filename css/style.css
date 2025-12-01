@@ -185,7 +185,7 @@ svg {
 
     h2 {
         font-size: clamp(45px, 8vw, 60px);
-        font-family: 'MYhero','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'MYhero', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         max-width: 400px;
         color: aliceblue;
         word-spacing: 2px;
@@ -300,6 +300,7 @@ svg {
 /* Seller Section */
 .seller {
     margin-top: -50px;
+
     h3 {
         font-size: clamp(30px, 6vw, 40px);
         color: #E4420A;
@@ -557,7 +558,7 @@ svg {
 
     .container {
         display: block;
-        background-color: #852100eb;
+        background-color: #7a1f00;
         backdrop-filter: blur(10px);
         width: 90%;
         margin: auto;
@@ -583,6 +584,18 @@ svg {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
+    button:hover {
+        display: block;
+        margin: auto;
+        width: 16.5em;
+        border: none;
+        padding: 10px 20px;
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
 
     input {
         display: block;
@@ -644,7 +657,7 @@ footer {
     }
 
     h4 {
-        color:#fcece6;
+        color: #fcece6;
         font-size: 1.3rem;
     }
 
@@ -656,7 +669,7 @@ footer {
         max-width: 300px;
     }
 
-     .Contact img {
+    .Contact img {
         width: 30px;
         height: 30px;
         filter: brightness(0) invert(1);
@@ -827,7 +840,8 @@ footer {
 
     /* Seller section */
     .seller {
-           margin-top: -10px;
+        margin-top: -10px;
+
         .seller-container {
             position: absolute;
             top: -50px;
@@ -841,7 +855,7 @@ footer {
     }
 
     .process {
-        margin-inline: 40px;
+        margin-inline: 60px;
     }
 
     .blog-container {
@@ -856,8 +870,8 @@ footer {
     }
 
     .floating-top img {
-    position: relative;
-    left: 94vw;
-    width: 40px;
-}
+        position: relative;
+        left: 94vw;
+        width: 40px;
+    }
 }
