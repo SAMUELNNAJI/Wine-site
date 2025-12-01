@@ -119,13 +119,13 @@ header {
     li a {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-weight: 700;
+        font-weight: 500;
         font-size: 18px;
 
     }
 
     a:hover {
-        color: #FDA038;
+        color: #D63E0D;
     }
 
 }
@@ -288,7 +288,7 @@ footer {
     }
 
     h4 {
-        color: #511502;
+        color:#fcece6;
         font-size: 1.3rem;
     }
 
@@ -300,9 +300,11 @@ footer {
         max-width: 300px;
     }
 
-    .Contact img {
+      .Contact img {
         width: 30px;
         height: 30px;
+        filter: brightness(0) invert(1);
+
     }
 
     .contact-us {

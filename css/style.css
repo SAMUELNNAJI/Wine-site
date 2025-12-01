@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MYhero';
-    src: url(../fonts/gulams-condensed-ext-bd-font/GulamsCondensedDemoExtrabold-8OBrD.otf);
+    src: url(../Assset/fonts/gulams-condensed-ext-bd-font/GulamsCondensedDemoExtrabold-8OBrD.otf);
 }
 
 @keyframes fadein {
@@ -119,13 +119,13 @@ header {
     li a {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-weight: 700;
+        font-weight: 500;
         font-size: 18px;
 
     }
 
     a:hover {
-        color: #FDA038;
+        color: #D63E0D;
     }
 
 }
@@ -185,7 +185,7 @@ svg {
 
     h2 {
         font-size: clamp(45px, 8vw, 60px);
-        font-family: 'MYhero';
+        font-family: 'MYhero','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         max-width: 400px;
         color: aliceblue;
         word-spacing: 2px;
@@ -499,7 +499,7 @@ svg {
         align-items: baseline;
         justify-content: center;
         gap: 1em;
-        animation: infinite-scroll 17s infinite linear;
+        animation: infinite-scroll 50s infinite linear;
     }
 
 
@@ -557,7 +557,7 @@ svg {
 
     .container {
         display: block;
-        background-color: #5f0e03;
+        background-color: #852100eb;
         backdrop-filter: blur(10px);
         width: 90%;
         margin: auto;
@@ -644,7 +644,7 @@ footer {
     }
 
     h4 {
-        color: #511502;
+        color:#fcece6;
         font-size: 1.3rem;
     }
 
@@ -656,14 +656,12 @@ footer {
         max-width: 300px;
     }
 
-    .Contact img {
+     .Contact img {
         width: 30px;
         height: 30px;
-    }
+        filter: brightness(0) invert(1);
 
-    /* .Contact img {
-filter: invert(9%) sepia(84%) saturate(3300%) hue-rotate(354deg) brightness(82%) contrast(110%);
-} */
+    }
 
     .contact-us {
         display: flex;
