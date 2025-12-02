@@ -128,6 +128,12 @@ header {
         color: #D63E0D;
     }
 
+     .sign-up img{
+        width: 20px;
+        height: 20px;
+        transform: translateY(5px);
+        filter: brightness(100%) invert(100%);
+    }
 }
 
 .mobile .MobileMenu {
@@ -140,19 +146,20 @@ header {
     width: 270px;
     height: 100vh;
     align-items: center;
-    border: #79483E 2px solid;
+    border: #992701 2px solid;
     border-radius: 14px;
     backdrop-filter: blur(10px);
     justify-content: flex-start;
-    gap: 60px;
+    gap: 50px;
     padding-top: 30px;
 }
 
-.MobileMenu a:hover {
-    background-color: #79483E;
+.MobileMenu a:hover:not(.btn, .svg){
+    background-color: #D63E0D;
+    color: #fcece6;
     padding: 9px 80px;
-    border-radius: 100px;
-    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.525);
+     border-radius: 18px;
+    box-shadow: 2px 2px 0px 1px rgba(74, 74, 74, 0.525);
 }
 
 svg {
