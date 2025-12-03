@@ -280,7 +280,6 @@ hr {
         margin-top: 70px;
         margin-bottom: 70px;
         background-color: #ffffff;
-        padding: 20px;
     }
 
     img {
@@ -295,7 +294,7 @@ hr {
     }
 
     p {
-        max-width: 450px;
+        max-width: 520px;
         margin-bottom: 30px;
         font-weight: 500;
         font-size: clamp(12px, 4vw, 14px);
