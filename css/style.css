@@ -97,12 +97,13 @@ header {
 
 
     nav {
-        background-color: rgba(146, 99, 99, 0.548);
+        background-color: rgba(146, 99, 99, 0.386);
         padding: 10px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
-        box-shadow: 2px 2px 2px 0px rgba(23, 21, 21, 0.386);
+        box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
         margin-left: 250px;
+
     }
 
     ul {
@@ -110,7 +111,7 @@ header {
         display: flex;
         justify-content: center;
         gap: 30px;
-      
+
     }
 
     li {
@@ -122,19 +123,15 @@ header {
         color: rgb(255, 255, 255);
         font-weight: 700;
         font-size: 16px;
-        
-
+        transition: all 1s ease;
     }
 
-    a:hover {
+    li a:hover {
         color: #D63E0D;
     }
 
-    
 
-   
-
-    .sign-up img{
+    .sign-up img {
         width: 20px;
         height: 20px;
         transform: translateY(5px);
@@ -152,7 +149,7 @@ header {
     width: 270px;
     height: 100vh;
     align-items: center;
-  border: #992701 2px solid;
+    border: #992701 2px solid;
     border-radius: 14px;
     backdrop-filter: blur(10px);
     justify-content: flex-start;
@@ -164,7 +161,7 @@ header {
     background-color: #D63E0D;
     color: #fcece6;
     padding: 9px 80px;
-     border-radius: 18px;
+    border-radius: 18px;
     box-shadow: 2px 2px 0px 1px rgba(74, 74, 74, 0.525);
 }
 
@@ -312,7 +309,7 @@ svg {
 
 /* Seller Section */
 .seller {
-    margin-top: -50px;
+    width: 100%;
 
     h3 {
         font-size: clamp(30px, 6vw, 40px);
@@ -334,10 +331,12 @@ svg {
     }
 
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 100%;
         align-items: baseline;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     h4 {
@@ -437,7 +436,7 @@ svg {
 
 /* Sponsors section */
 .sponsors {
-    margin-top: 90px;
+    margin-top: 40px;
     position: relative;
     width: 100%;
     height: auto;
@@ -479,6 +478,7 @@ svg {
     .blog-post p {
         max-width: 250px;
         margin-bottom: 30px;
+        text-align: justify;
         font-size: clamp(10px, 4vw, 13px);
     }
 
@@ -486,6 +486,7 @@ svg {
         max-width: 250px;
         margin-top: 15px;
         margin-bottom: 15px;
+
     }
 
     .blog-post button {
@@ -527,12 +528,13 @@ svg {
     }
 
     h5 {
-        font-size: clamp(20px, 3vw, 30px);
+        font-size: clamp(20px, 3vw, 20px);
         margin-bottom: 10px;
     }
 
     p {
-        font-size: clamp(14px, 2vw, 10px);
+        font-size: clamp(12px, 2vw, 10px);
+        text-align: justify;
     }
 
     .card img {
@@ -548,6 +550,8 @@ svg {
 
     #p1 {
         margin-bottom: -90px;
+        text-align: center;
+        font-size: clamp(15px, 4vw, 18px);
     }
 }
 
@@ -676,10 +680,11 @@ footer {
 
     .logo img {
         width: 300px;
+        margin-left: -13px;
     }
 
     .logo p {
-        max-width: 300px;
+        max-width: 320px;
     }
 
     .Contact img {
@@ -855,16 +860,10 @@ footer {
     .seller {
         margin-top: -10px;
 
-        .seller-container {
-            position: absolute;
-            top: -50px;
-        }
-
-
     }
 
     .product {
-        margin-inline: 60px;
+        margin-inline: 30px;
     }
 
     .process {

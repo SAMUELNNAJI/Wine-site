@@ -96,12 +96,12 @@ header {
 
 
 
-    nav {
-        background-color: rgba(146, 99, 99, 0.548);
+   nav {
+        background-color: rgba(146, 99, 99, 0.386);
         padding: 10px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
-        box-shadow: 2px 2px 2px 0px rgba(23, 21, 21, 0.386);
+        box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
         margin-left: 250px;
     }
 
@@ -119,9 +119,8 @@ header {
     li a {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-weight: 500;
-        font-size: 18px;
-
+        font-weight: 700;
+        font-size: 16px;
     }
 
     a:hover {
@@ -211,6 +210,7 @@ hr {
         margin: 20px;
         display: flex;
         justify-content: space-between;
+        align-items:last baseline;
         padding: 40px 10px;
         flex-wrap: wrap;
         gap: 40px;
@@ -251,7 +251,7 @@ hr {
         height: 40px;
         border-radius: 12px;
         border: 1px solid black;
-        padding-inline: 10px;
+        /* padding-inline: 10px; */
     }
 
     .map {
@@ -301,10 +301,11 @@ footer {
 
     .logo img {
         width: 300px;
+        margin-left: -13px;
     }
 
     .logo p {
-        max-width: 300px;
+        max-width: 320px;
     }
 
       .Contact img {
@@ -374,4 +375,36 @@ footer {
         width: 40px;
     }
 
+    .Contact-section{
+         h3 {
+        color: #D63E0D;
+        font-size: clamp(25px, 4vw, 35px);
+        text-align: left;
+        max-width: 500PX;
+
+    }
+
+    h3{
+        line-height: 39px;
+    }
+
+
+
+     .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+
+    p {
+        text-align: left;
+        max-width: 400px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: clamp(17px, 3.5vw, 18px);
+        padding-top: 10px;
+    }
+
+    }
 }

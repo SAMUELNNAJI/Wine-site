@@ -97,11 +97,11 @@ header {
 
 
     nav {
-        background-color: rgba(146, 99, 99, 0.548);
+        background-color: rgba(146, 99, 99, 0.386);
         padding: 10px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
-        box-shadow: 2px 2px 2px 0px rgba(23, 21, 21, 0.386);
+        box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
         margin-left: 250px;
     }
 
@@ -117,10 +117,11 @@ header {
     }
 
     li a {
-        text-decoration: none;
+          text-decoration: none;
         color: rgb(255, 255, 255);
-        font-weight: 500;
-        font-size: 18px;
+        font-weight: 700;
+        font-size: 16px;
+        
 
     }
 
@@ -213,13 +214,13 @@ hr {
 
 
     .value-container {
-
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 10px;
         flex-wrap: wrap;
         margin-bottom: 20px;
+        
     }
 
     #p1 {
@@ -227,6 +228,10 @@ hr {
         font-weight: 500;
         margin-bottom: 20px;
         padding: 20px;
+        max-width: 500px;
+        display: block;
+        margin: auto;
+        text-align: center;
     }
 
     h3 {
@@ -235,18 +240,19 @@ hr {
         margin-top: 20px;
     }
 
-    p {
+    p:not(#p1) {
         text-align: center;
         max-width: 500px;
         display: block;
         margin: auto;
         color: #fcece6;
-        font-size: clamp(12px, 4vw, 15px);
+        font-size: clamp(12px, 4vw, 13px);
+        text-align: left;
     }
 
     h5 {
         font-size: clamp(18px, 4vw, 20px);
-        text-align: center;
+        text-align: left;
         color: #FDA038;
         margin-bottom: 10px;
     }
@@ -254,16 +260,12 @@ hr {
     .box {
         width: 300px;
         background-image: linear-gradient(45deg, #5F0E03, #5F0E03, #D63E0D);
-        height: 250px;
+        height: 220px;
         padding: 20px;
         border-radius: 12px;
         box-shadow: 2px 2px 8px 4px rgb(194, 194, 194);
-        transform-style: preserve-3d;
-        backface-visibility: visible;
-        transform-style: preserve-3d;
-        transition: transform 6s;
-        /* transform: rotateY(180deg); */
     }
+
 }
 
 .Service {
@@ -279,8 +281,6 @@ hr {
         margin-bottom: 70px;
         background-color: #ffffff;
         padding: 20px;
-        border-radius: 17px;
-        box-shadow: 2px 2px 8px 4px rgb(194, 194, 194);
     }
 
     img {
@@ -355,12 +355,13 @@ footer {
         font-size: 1.3rem;
     }
 
-    .logo img {
+  .logo img {
         width: 300px;
+        margin-left: -13px;
     }
 
     .logo p {
-        max-width: 300px;
+        max-width: 320px;
     }
 
     .Contact img {
@@ -379,11 +380,11 @@ footer {
 
 .faq {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: first baseline;
     flex-wrap: wrap;
     padding: 20px;
-    gap: 20px;
+    gap: 70px;
 
     h3 {
         text-align: initial;
@@ -581,7 +582,7 @@ footer {
         }
 
         .box {
-            height: 270px;
+            height: 240px;
         }
     }
 
