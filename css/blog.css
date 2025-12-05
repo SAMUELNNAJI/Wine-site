@@ -331,7 +331,18 @@ footer {
 
 
 
+/* Floating */
+.floating-top {
+    width: 100%;
+    position: sticky;
+    bottom: 10px;
+}
 
+.floating-top img {
+    position: relative;
+    left: 85vw;
+    width: 40px;
+}
 
 
 
