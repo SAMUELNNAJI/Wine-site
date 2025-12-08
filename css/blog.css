@@ -102,7 +102,7 @@ header {
         border-radius: 18px;
         backdrop-filter: blur(10px);
         box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
-        margin-left: 250px;
+         margin-left: 192px;
     }
 
     ul {
@@ -229,6 +229,7 @@ hr {
         gap: 20px;
         flex-wrap: wrap;
         margin: 40px;
+         gap: 40px;
     }
 
     .post-card {
@@ -239,6 +240,7 @@ hr {
         text-align: center;
         padding: 20px;
         padding-bottom: 30px;
+        
     }
 
     a{
@@ -374,15 +376,28 @@ footer {
         display: none;
     }
 
-    footer {
-        .footer-container {
-            padding-inline: 80px;
+     header {
+        .logo img {
+            width: 200px;
+            margin-inline: 40.5px;
         }
+
     }
 
-      .floating-top img {
-        position: relative;
-        left: 94vw;
-        width: 40px;
+   
+    footer {
+        .footer-container {
+            padding-inline: 83px;
+        }
+
+        p:has(.logo) {
+            padding-left: -5px;
+        }
+
+        .floating-top img {
+            position: relative;
+            left: 94vw;
+            width: 40px;
+        }
     }
 }

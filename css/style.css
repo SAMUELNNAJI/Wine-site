@@ -102,7 +102,7 @@ header {
         border-radius: 18px;
         backdrop-filter: blur(10px);
         box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
-        margin-left: 250px;
+        margin-left: 192px;
 
     }
 
@@ -502,7 +502,7 @@ svg {
 
     .carousel {
         margin: 100px auto;
-        width: 90%;
+        width: 87.2%;
         display: flex;
         overflow-x: auto;
         gap: 1rem;
@@ -745,11 +745,15 @@ footer {
         display: none;
     }
 
+    header{
+        .logo img {
+           width: 200px;
+           margin-inline:40.5px;
+       }
+
+    }
+
     .hero {
-
-
-
-
 
         .desktop-video {
             display: block;
@@ -769,7 +773,7 @@ footer {
             font-size: 250px;
             font-weight: 900;
             top: 5%;
-            left: 60px;
+            left: 76px;
             opacity: 0.1;
         }
 
@@ -863,7 +867,7 @@ footer {
     }
 
     .product {
-        margin-inline: 30px;
+        margin-inline: 53px;
     }
 
     .process {
@@ -871,14 +875,25 @@ footer {
     }
 
     .blog-container {
-        margin-inline: 60px;
+        margin-inline: 63px;
 
+    }
+
+    .Subscribe {
+
+    .container {
+      
+        width: 87.2%;
+    }
     }
 
     footer {
         .footer-container {
-            padding-inline: 80px;
+            padding-inline: 83px;
         }
+
+        p:has(.logo){
+         padding-left: -5px;
     }
 
     .floating-top img {
@@ -886,4 +901,5 @@ footer {
         left: 94vw;
         width: 40px;
     }
+}
 }
