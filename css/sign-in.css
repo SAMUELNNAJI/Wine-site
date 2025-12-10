@@ -45,6 +45,7 @@
     color: #fdf6ea;
     box-shadow: #00000050 2px 2px 2px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
 }
 
 .btn:hover {
@@ -174,9 +175,7 @@ svg {
     position: absolute;
     inset: 0;
      background: linear-gradient(45deg,#511402a0,#d63f0dc3,#511402cb);
-     opacity: 0.9;
-      width: 100%;
-    height: 60vh;
+     opacity: 0.7;
     
 }
 
@@ -187,6 +186,8 @@ svg {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    
 
     h2 {
         color: #fdf6ea;
@@ -195,7 +196,7 @@ svg {
         text-align: center;
         padding-top: 100px;
         text-shadow: 2px 2px 4px #000000b3;
-         position: relative;
+        position: relative;
         z-index: 12;
     }
 
@@ -222,66 +223,134 @@ hr {
     border: #210C0C 2px solid;
 }
 
-.blog{
 
-    h3{
-        text-align: center;
-        font-size: 32px;
-        font-weight: 700;
-        margin-top: 40px;
-    }
+.sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 
-    p{
-        text-align: center;
-        font-size: 18px;
-        margin-top: 10px;
-        font-weight: 500;
-    }
-    .post-container {
+    .sign-in-container{
         display: flex;
         justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 2px black;
         gap: 20px;
-        flex-wrap: wrap;
-        margin: 40px;
-         gap: 40px;
+        margin: 20px;
+        border-radius: 12px;
     }
 
-    .post-card {
-        width: 340px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border-radius: 14px;
-        overflow: hidden;
-        text-align: center;
+    .wine{
+        background-color: #D63E0D;
+        height: 500px;
         padding: 20px;
-        padding-bottom: 30px;
+        border-radius: 0 12px 12px 0;
+        position: relative;
+        background: url(../Assset/images/blog-img7.webp);
+
+           button{
+            padding: 10px 25px;
+            font-weight: 500;
+            background-color: transparent;
+            border: #fefcfc solid 2px;
+            border-radius: 8px;
+            color: #fefcfc;
+            margin: 30px 0;
+            cursor: pointer;
+            transform: translateX(100%);
+        }
+
+          h2{
+            color: #fcece6;
+            text-align: center;
+            font-size: clamp(20px,6vw,34px);
+        }
+
+        p{
+            max-width: 300px;
+            font-weight: 500;
+            color: #fefcfc;
+            text-align: center;
+        }
+        .content{
+            position: relative;
+            top: 160px;
+        }
+    } 
+
+        .wine::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+             border-radius: 0 12px 12px 0;
+            background: linear-gradient(45deg,#511402a0,#d63f0dc3,#511402cb);
+        }
         
-    }
+      
+        
+      
+    
 
-    a{
-        text-decoration: none;
-    }
+    .form{
+        height: 500px;
+        padding: 50px;  
 
-    span{
-        color: #511502;
-        font-size: 14px;
-        font-weight: 500;
-    }
+        h1{
+            text-align:initial;
+            color: #D63E0D;
+        }
 
-    .post-card p{
-        margin-top: 0px;
-          font-size: 14px;
-        margin-top: 10px;
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
+        input{
+            width: 300px;
+            height: 40px;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1.5px solid black;
+        }
 
-    img{
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 8px;
+        .check{
+            display: flex;
+            align-items: center;
+        }
+        #check{
+            width: 30px;
+            height: 20px;
+        }
+
+        button{
+            padding: 14px 124px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            color: #992701;
+        }
+
+        p{
+            font-weight: 500;
+        }
+
+        span{
+            margin-top: -100px;
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     position: relative;
@@ -410,7 +479,7 @@ footer {
 
         .floating-top img {
             position: relative;
-            left: 94vw;
+            left: 95vw;
             width: 40px;
         }
     }
