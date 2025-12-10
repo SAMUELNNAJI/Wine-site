@@ -713,7 +713,7 @@ footer {
 
 .floating-top img {
     position: relative;
-    left: 95vw;
+    left: 85vw;
     width: 40px;
 }
 
@@ -895,11 +895,11 @@ footer {
         p:has(.logo){
          padding-left: -5px;
     }
+}
 
-    .floating-top img {
+ .floating-top img {
         position: relative;
         left: 94vw;
         width: 40px;
     }
-}
 }
