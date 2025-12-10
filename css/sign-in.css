@@ -224,6 +224,8 @@ hr {
 }
 
 
+
+
 .sign-in{
     display: flex;
     align-items: center;
@@ -248,6 +250,7 @@ hr {
         border-radius: 0 12px 12px 0;
         position: relative;
         background: url(../Assset/images/blog-img7.webp);
+        display: none;
 
            button{
             padding: 10px 25px;
@@ -340,10 +343,6 @@ hr {
         }
     }
 }
-
-
-
-
 
 
 
@@ -450,6 +449,7 @@ footer {
         padding: 20px;
     }
 
+   
 
 }
 
@@ -483,4 +483,14 @@ footer {
             width: 40px;
         }
     }
+
+
+    
+.sign-in{
+   
+    .wine{
+        display: flex;
+    } 
+}
+
 }

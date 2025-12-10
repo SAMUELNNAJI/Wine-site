@@ -252,6 +252,7 @@ hr {
         border-radius: 12px 0px 0px 12px;
         position: relative;
         background: url(../Assset/images/blog-img7.webp);
+        display: none;
 
            button{
             padding: 10px 25px;
@@ -487,4 +488,11 @@ footer {
             width: 40px;
         }
     }
+
+    .sign-in{
+   
+    .wine{
+        display: flex;
+    } 
+}
 }
