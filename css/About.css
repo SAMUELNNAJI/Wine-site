@@ -169,15 +169,15 @@ svg {
 
 }
 
-.hero-section::before{
+.hero-section::before {
     content: '';
     position: absolute;
     inset: 0;
-     background: linear-gradient(45deg,#511402a0,#d63f0dc3,#511402cb);
-     opacity: 0.9;
-      width: 100%;
+    background: linear-gradient(45deg, #511402a0, #d63f0dc3, #511402cb);
+    opacity: 0.9;
+    width: 100%;
     height: 60vh;
-    
+
 }
 
 .hero-section {
@@ -195,7 +195,7 @@ svg {
         text-align: center;
         padding-top: 100px;
         text-shadow: 2px 2px 4px #000000b3;
-         position: relative;
+        position: relative;
         z-index: 12;
     }
 
@@ -210,9 +210,9 @@ svg {
         display: block;
         margin: auto;
         padding: 20px;
-         position: relative;
+        position: relative;
         z-index: 12;
-      
+
     }
 }
 
@@ -612,44 +612,43 @@ footer {
 
     }
 
-        .Values {
-            .value-container {
-                gap: 20px;
-                margin-inline: 40px;
-            }
-
-            .box {
-                height: 240px;
-            }
+    .Values {
+        .value-container {
+            gap: 20px;
+            margin-inline: 40px;
         }
 
-
-        .Service {
-
-            .Our-Service {
-                align-items: flex-end;
-                padding: 20px;
-                padding-top: 70px;
-            }
-
-            p {
-                max-width: 465px;
-            }
-
-            img {
-                width: 400px;
-            }
+        .box {
+            height: 240px;
         }
-
-        .faq {
-            gap: 157px;
-        }
-
-        .floating-top img {
-            position: relative;
-            left: 94vw;
-            width: 40px;
-        }
-
     }
 
+
+    .Service {
+
+        .Our-Service {
+            align-items: flex-end;
+            padding: 20px;
+            padding-top: 70px;
+        }
+
+        p {
+            max-width: 465px;
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .faq {
+        gap: 157px;
+    }
+
+    .floating-top img {
+        position: relative;
+        left: 94vw;
+        width: 40px;
+    }
+
+}

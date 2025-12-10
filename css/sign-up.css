@@ -421,6 +421,7 @@ footer {
 
 
 
+
 /* Floating */
 .floating-top {
     width: 100%;
@@ -430,9 +431,10 @@ footer {
 
 .floating-top img {
     position: relative;
-    left: 95vw;
+    left: 85vw;
     width: 40px;
 }
+
 
 
 
@@ -473,20 +475,10 @@ footer {
     }
 
    
-    footer {
-        .footer-container {
-            padding-inline: 83px;
-        }
-
-        p:has(.logo) {
-            padding-left: -5px;
-        }
-
-        .floating-top img {
-            position: relative;
-            left: 94vw;
-            width: 40px;
-        }
+    .floating-top img {
+        position: relative;
+        left: 94vw;
+        width: 40px;
     }
 
     .sign-in{
