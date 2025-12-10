@@ -231,6 +231,7 @@ hr {
     justify-content: center;
     flex-direction: row-reverse;
     padding: 20px;
+    overflow-x: hidden;
     
     
 
