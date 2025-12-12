@@ -336,7 +336,8 @@ svg {
         gap: 10px;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
+     
     }
 
     h4 {
@@ -361,9 +362,13 @@ svg {
         border-radius: 12px;
         box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.228);
         margin-top: 30px;
-        gap: 10px;
         padding: 20px;
         transition: transform 3s ease;
+        flex-grow: 2;
+    }
+
+    .veiw{
+        margin-top: 30px;
     }
 
     .product:hover {
@@ -869,6 +874,7 @@ footer {
     .product {
         margin-inline: 53px;
     }
+
 
     .process {
         margin-inline: 60px;
