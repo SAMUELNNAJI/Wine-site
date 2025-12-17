@@ -939,7 +939,7 @@ footer {
 /* ANIMATIONS */
 
 .scroll-up{
-    animation: scroll-up 2s ease-in;
+    animation: scroll-up 10s ease-in;
     animation-timeline: view(100% 0%);
 }
 
@@ -969,7 +969,7 @@ footer {
 }
 
 .scroll-up3{
-    animation: scroll-up3 30s ease-in;
+    animation: scroll-up3 10s ease-in;
     animation-timeline: view(80% 0%);
 }
 
@@ -984,7 +984,7 @@ footer {
 }
 
 .scroll-up4{
-    animation: scroll-up4 130s ease-in;
+    animation: scroll-up4 10s ease-in;
     animation-timeline: view(80% 0%);
 }
 
@@ -1000,7 +1000,7 @@ footer {
 
 
 .scroll-left{
-    animation: scroll-left 2s ease-in;
+    animation: scroll-left 8s ease-in;
     animation-timeline: view(80% 0%);
 }
 
@@ -1015,7 +1015,7 @@ footer {
 }
 
 .scroll-right{
-    animation: scroll-right 2s ease-in;
+    animation: scroll-right 8s ease-in;
     animation-timeline: view(80% 0%);
 }
 
