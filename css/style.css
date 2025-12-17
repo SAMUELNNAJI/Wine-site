@@ -939,7 +939,7 @@ footer {
 /* ANIMATIONS */
 
 .scroll-up{
-    animation: scroll-up 10s ease-in;
+    animation: scroll-up 20s ease-in;
     animation-timeline: view(100% 0%);
 }
 
@@ -954,8 +954,8 @@ footer {
 }
 
 .scroll-up2{
-    animation: scroll-up2 10s ease-in;
-    animation-timeline: view(80% 0%);
+    animation: scroll-up2 20s ease-in;
+    animation-timeline: view(100% 0%);
 }
 
 @keyframes scroll-up2 {
@@ -969,8 +969,8 @@ footer {
 }
 
 .scroll-up3{
-    animation: scroll-up3 10s ease-in;
-    animation-timeline: view(80% 0%);
+    animation: scroll-up3 20s ease-in;
+    animation-timeline: view(100% 0%);
 }
 
 @keyframes scroll-up3 {
@@ -984,8 +984,8 @@ footer {
 }
 
 .scroll-up4{
-    animation: scroll-up4 10s ease-in;
-    animation-timeline: view(80% 0%);
+    animation: scroll-up4 20s ease-in;
+    animation-timeline: view(100% 0%);
 }
 
 @keyframes scroll-up4 {

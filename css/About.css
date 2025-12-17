@@ -715,3 +715,54 @@ footer {
     }
 
 }
+
+/* ANIMATIONS */
+.scroll-left{
+    animation: scroll-left 8s ease-in;
+    animation-timeline: view(80% 0%);
+}
+
+@keyframes scroll-left {
+    from{
+        transform: translateX(-100vh);
+    }
+
+    to{
+         transform: translateX(0vh);
+    }
+}
+
+.scroll-right{
+    animation: scroll-right 8s ease-in;
+    animation-timeline: view(80% 0%);
+}
+
+@keyframes scroll-right {
+    from{
+        transform: translateX(100vh);
+    }
+
+    to{
+         transform: translateX(0vh);
+    }
+}
+
+.scroll-up{
+    animation: scroll-up 20s ease-in;
+    animation-timeline: view(100% 0%);
+}
+
+@keyframes scroll-up {
+    from{
+        transform: translateY(100vh);
+    }
+
+    to{
+         transform: translateY(0vh);
+    }
+}
+
+.scroll-up2{
+    animation: scroll-up2 20s ease-in;
+    animation-timeline: view(100% 0%);
+}
