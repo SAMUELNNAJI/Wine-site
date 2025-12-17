@@ -189,6 +189,7 @@ svg {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     h2 {
         color: #fdf6ea;

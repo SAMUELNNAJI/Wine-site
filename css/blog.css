@@ -178,12 +178,14 @@ svg {
       width: 100%;
     height: 60vh;
     
+    
 }
 
 .hero-section {
     width: 100%;
     height: 60vh;
     background-image: url(../Assset/images/page-hero.webp);
+    background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,7 +240,8 @@ hr {
         font-weight: 500;
     }
     .post-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
@@ -247,6 +250,10 @@ hr {
     }
 
     .post-card {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 5;
+        gap: 10px;
         width: 340px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 14px;
@@ -267,6 +274,11 @@ hr {
         font-weight: 500;
     }
 
+    .btn{
+        width: 10em;
+        display: block;
+        margin: auto;
+    }
     .post-card p{
         margin-top: 0px;
           font-size: 14px;

@@ -187,6 +187,7 @@ svg {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     h2 {
         color: #fdf6ea;
@@ -262,7 +263,7 @@ hr {
         display: block;
         margin: auto;
         color: #fcece6;
-        font-size: clamp(12px, 4vw, 13px);
+        font-size: clamp(14px, 4vw, 14px);
         text-align: left;
     }
 
