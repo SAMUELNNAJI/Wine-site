@@ -939,7 +939,7 @@ footer {
 /* ANIMATIONS */
 
 .scroll-up{
-    animation: scroll-up 20s ease-out;
+    animation: scroll-up 20s ease-out 1s;
     animation-timeline: view(100% 0%);
 }
 
@@ -954,7 +954,7 @@ footer {
 }
 
 .scroll-up2{
-    animation: scroll-up2 20s ease-out;
+    animation: scroll-up2 20s ease-out 1s;
     animation-timeline: view(100% 0%);
 }
 
@@ -969,7 +969,7 @@ footer {
 }
 
 .scroll-up3{
-    animation: scroll-up3 20s ease-out;
+    animation: scroll-up3 20s ease-out 1s;
     animation-timeline: view(100% 0%);
 }
 
@@ -984,7 +984,7 @@ footer {
 }
 
 .scroll-up4{
-    animation: scroll-up4 20s ease-out;
+    animation: scroll-up4 20s ease-out 1s;
     animation-timeline: view(100% 0%);
 }
 
@@ -1000,7 +1000,7 @@ footer {
 
 
 .scroll-left{
-    animation: scroll-left 8s ease-in-out;
+    animation: scroll-left 8s ease;
     animation-timeline: view(80% 0%);
 }
 
@@ -1015,7 +1015,7 @@ footer {
 }
 
 .scroll-right{
-    animation: scroll-right 8s ease-in-out;
+    animation: scroll-right 8s ease;
     animation-timeline: view(80% 0%);
 }
 
