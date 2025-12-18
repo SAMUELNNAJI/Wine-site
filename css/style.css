@@ -59,6 +59,8 @@
     transition: all 0.7s ease;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -488,6 +490,7 @@ svg {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
         justify-content: space-around;
+        justify-items: center;
         flex-wrap: wrap;
         margin-top: 40px;
        
