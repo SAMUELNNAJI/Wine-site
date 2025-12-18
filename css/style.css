@@ -317,6 +317,7 @@ svg {
 /* Seller Section */
 .seller {
     width: 100%;
+    margin-top: 40px;
 
     h3 {
         font-size: clamp(30px, 6vw, 40px);
@@ -942,6 +943,10 @@ footer {
 
 
 @media (max-width:1150px) {
+
+    .hero{
+        height: 100vh;
+    }
 
     .desktop-menu {
         display: none;
