@@ -178,8 +178,8 @@ svg {
 
 /* hero section */
 .hero {
-    width: 100vw;
-    height: 120vh;
+    /* width: 100vw; */
+    /* height: 100vh; */
     position: relative;
     overflow: hidden;
 
@@ -504,7 +504,7 @@ svg {
     .blog-post p {
         max-width: 250px;
         margin-bottom: 30px;
-        text-align: justify;
+        text-align:center;
         font-size: clamp(10px, 4vw, 13px);
         display: block;
         margin: auto;
@@ -562,7 +562,7 @@ svg {
 
     p {
         font-size: clamp(12px, 2vw, 10px);
-        text-align: justify;
+        text-align:center;
     }
 
     .card img {
@@ -603,7 +603,7 @@ svg {
 
     .container {
         display: block;
-        background-color: #7a1f00;
+        background-color: #b72e00;
         backdrop-filter: blur(10px);
         width: 90%;
         margin: auto;
@@ -622,7 +622,7 @@ svg {
     button {
         display: block;
         margin: auto;
-        width: 16.5em;
+        width: 80vw;
         border: none;
         padding: 10px 20px;
         font-size: 17px;
@@ -633,7 +633,7 @@ svg {
     button:hover {
         display: block;
         margin: auto;
-        width: 16.5em;
+        width: 80vw;
         border: none;
         padding: 10px 20px;
         font-size: 17px;
@@ -643,9 +643,10 @@ svg {
 
 
     input {
-        display: block;
-        margin: auto;
-        width: 21em;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+         width: 80vw;
         height: 40px;
         border-radius: 18px;
         margin-bottom: -18px;
@@ -784,6 +785,11 @@ footer {
 
     .hero {
 
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+    
         .desktop-video {
             display: block;
             width: 100vw;
@@ -913,6 +919,18 @@ footer {
         .container {
 
             width: 87.2%;
+        }
+
+        input{
+            width: 17rem;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: -20px;
+        }
+
+        button{
+            width: 17rem;
         }
     }
 

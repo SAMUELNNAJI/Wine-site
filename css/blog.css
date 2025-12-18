@@ -102,7 +102,7 @@ header {
         border-radius: 18px;
         backdrop-filter: blur(10px);
         box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
-         margin-left: 192px;
+        margin-left: 192px;
     }
 
     ul {
@@ -117,11 +117,11 @@ header {
     }
 
     li a {
-          text-decoration: none;
+        text-decoration: none;
         color: rgb(255, 255, 255);
         font-weight: 700;
         font-size: 16px;
-        
+
 
     }
 
@@ -129,7 +129,7 @@ header {
         color: #D63E0D;
     }
 
-     .sign-up img{
+    .sign-up img {
         width: 20px;
         height: 20px;
         transform: translateY(5px);
@@ -160,7 +160,7 @@ header {
     background-color: #D63E0D;
     color: #fcece6;
     padding: 9px 80px;
-     border-radius: 18px;
+    border-radius: 18px;
     box-shadow: 2px 2px 0px 1px rgba(74, 74, 74, 0.525);
 }
 
@@ -169,16 +169,16 @@ svg {
 
 }
 
-.hero-section::before{
+.hero-section::before {
     content: '';
     position: absolute;
     inset: 0;
-     background: linear-gradient(45deg,#511402a0,#d63f0dc3,#511402cb);
-     opacity: 0.9;
-      width: 100%;
+    background: linear-gradient(45deg, #511402a0, #d63f0dc3, #511402cb);
+    opacity: 0.9;
+    width: 100%;
     height: 60vh;
-    
-    
+
+
 }
 
 .hero-section {
@@ -197,7 +197,7 @@ svg {
         text-align: center;
         padding-top: 100px;
         text-shadow: 2px 2px 4px #000000b3;
-         position: relative;
+        position: relative;
         z-index: 12;
     }
 
@@ -212,7 +212,7 @@ svg {
         display: block;
         margin: auto;
         padding: 20px;
-         position: relative;
+        position: relative;
         z-index: 12;
     }
 }
@@ -224,29 +224,33 @@ hr {
     border: #210C0C 2px solid;
 }
 
-.blog{
+.blog {
+    margin: 20px;
 
-    h3{
+    h3 {
         text-align: center;
         font-size: 32px;
         font-weight: 700;
         margin-top: 40px;
     }
 
-    p{
+    p {
         text-align: center;
         font-size: 18px;
         margin-top: 10px;
         font-weight: 500;
     }
+
     .post-container {
-      display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         justify-content: center;
-        margin-inline:20px;
+        justify-items: center;
         flex-wrap: wrap;
         gap: 40px;
-        column-gap: 40px;
-       margin: 20px 0;
+        column-gap: 60px;
+        margin: 20px 0;
+        margin-inline: 70px;
     }
 
     .post-card {
@@ -254,39 +258,40 @@ hr {
         grid-template-rows: subgrid;
         grid-row: span 5;
         gap: 10px;
-        
+
         width: 340px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 14px;
         overflow: hidden;
         text-align: center;
         padding: 10px;
-        
+
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
-    span{
+    span {
         color: #511502;
         font-size: 14px;
         font-weight: 500;
     }
 
-    .btn{
+    .btn {
         width: 10em;
         display: block;
         margin: auto;
     }
-    .post-card p{
-          font-size: 14px;
+
+    .post-card p {
+        font-size: 14px;
         margin-top: 10px;
         font-weight: 500;
         margin-bottom: 10px;
     }
 
-    img{
+    img {
         width: 100%;
         height: 220px;
         object-fit: cover;
@@ -329,11 +334,11 @@ footer {
     }
 
     h4 {
-      color:#fcece6;
+        color: #fcece6;
         font-size: 1.3rem;
     }
 
-  .logo img {
+    .logo img {
         width: 300px;
         margin-left: -13px;
     }
@@ -402,7 +407,7 @@ footer {
         display: none;
     }
 
-     header {
+    header {
         .logo img {
             width: 200px;
             margin-inline: 40.5px;
@@ -410,12 +415,27 @@ footer {
 
     }
 
-  
 
-     .floating-top img {
+
+    .floating-top img {
         position: relative;
         left: 94vw;
         width: 40px;
     }
 
+}
+
+/* Animations */
+.zoom{
+    animation: zoom 1s linear;
+}
+
+@keyframes zoom {
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+       transform: scale(1);
+    }
 }
