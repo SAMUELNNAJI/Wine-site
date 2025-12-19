@@ -269,6 +269,7 @@ hr {
         border-radius: 12px;
         border: 1px solid black;
         /* padding-inline: 10px; */
+        padding: 20px;
     }
 
     .map {
