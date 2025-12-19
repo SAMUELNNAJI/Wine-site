@@ -1149,6 +1149,7 @@ footer {
     }
 
     footer {
+        overflow-y: hidden;
         .footer-container {
             padding-inline: 83px;
         }
@@ -1263,3 +1264,5 @@ footer {
         transform: translateX(0vh);
     }
 }
+
+

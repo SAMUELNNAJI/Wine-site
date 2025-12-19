@@ -250,7 +250,7 @@ hr {
         gap: 40px;
         column-gap: 60px;
         margin: 20px 0;
-        margin-inline: 70px;
+        margin-inline: 40px;
     }
 
     .post-card {
@@ -259,7 +259,7 @@ hr {
         grid-row: span 5;
         gap: 10px;
 
-        width: 340px;
+        width: 310px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 14px;
         overflow: hidden;
@@ -439,3 +439,4 @@ footer {
        transform: scale(1);
     }
 }
+
