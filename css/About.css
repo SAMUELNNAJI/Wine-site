@@ -812,7 +812,7 @@ ul {
 
 /* ANIMATIONS */
 .scroll-left{
-    animation: scroll-left 8s linear;
+    animation: scroll-left 8s cubic-bezier(.35,.2,.17,.9);
     animation-timeline: view(80% 0%);
 }
 
@@ -827,7 +827,7 @@ ul {
 }
 
 .scroll-right{
-    animation: scroll-right 8s linear;
+    animation: scroll-right 8s cubic-bezier(.35,.2,.17,.9);
     animation-timeline: view(80% 0%);
 }
 
@@ -842,7 +842,7 @@ ul {
 }
 
 .scroll-up{
-    animation: scroll-up 20s linear;
+    animation: scroll-up 20s cubic-bezier(.35,.2,.17,.9);
     animation-timeline: view(100% 0%);
 }
 
@@ -852,7 +852,7 @@ ul {
     }
 
     to{
-         transform: translateY(0vh);
+         transform: translateY(-0vh);
     }
 }
 
