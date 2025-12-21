@@ -14,18 +14,42 @@
 }
 
 .color-scroll {
-    animation: color-scroll 5s ease infinite;
+    animation: color-scroll 5s ease backwards;
+     animation-timeline: view(50% 0%);
 }
 
 @keyframes color-scroll {
     0% {
-        color: #D63E0D;
+        background-color: #D63E0D;
         transform: translateX(-100%);
     }
 
-    100% {
-        color: #511502;
+    50% {
+         background-color: #511502;
         transform: translateX(100%);
+    }
+
+    100%{
+         background-color: #511502;
+        transform: translateX(0%); 
+    }
+}
+
+.flip{
+    animation: flip 5s ease-out  backwards;
+      transition: transform 0.6s;
+  transform-style: preserve-3d;
+   animation-timeline: view(50% 0%);
+}
+
+@keyframes flip {
+    0%{
+        transform: rotateY(180deg); 
+    }
+    
+
+    100%{
+      transform: rotateY(0deg);  
     }
 }
 
@@ -98,7 +122,7 @@ header {
 
     nav {
         background-color: rgba(146, 99, 99, 0.386);
-        padding: 10px 20px;
+       padding: 15px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
         box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
@@ -121,13 +145,12 @@ header {
         color: rgb(255, 255, 255);
         font-weight: 700;
         font-size: 16px;
-
-
     }
 
     a:hover {
         color: #D63E0D;
     }
+
 
     .sign-up img {
         width: 20px;
@@ -660,8 +683,6 @@ ul {
         border: #5F0E03 2px solid;
         border-radius: 12px;
         padding: 20px;
-         box-shadow:24px 24px 100px #a1a1a1,
-             -24px -24px 100px #ffffff;
          transition: all 0.3s linear;
     }
 
@@ -711,6 +732,7 @@ ul {
     position: relative;
     left: 85vw;
     width: 40px;
+     filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
 }
 
 @media (max-width:1150px) {

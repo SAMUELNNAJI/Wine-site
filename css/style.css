@@ -14,18 +14,24 @@
 }
 
 .color-scroll {
-    animation: color-scroll 5s ease infinite;
+    animation: color-scroll 5s ease backwards;
+     animation-timeline: view(50% 0%);
 }
 
 @keyframes color-scroll {
     0% {
-        color: #D63E0D;
+        background-color: #D63E0D;
         transform: translateX(-100%);
     }
 
-    100% {
-        color: #511502;
+    50% {
+         background-color: #511502;
         transform: translateX(100%);
+    }
+
+    100%{
+         background-color: #511502;
+        transform: translateX(0%); 
     }
 }
 
@@ -103,12 +109,12 @@ header {
 
     nav {
         background-color: rgba(146, 99, 99, 0.386);
-        padding: 10px 20px;
+        padding: 15px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
         box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
         margin-left: 192px;
-
+        
     }
 
     ul {
@@ -116,6 +122,7 @@ header {
         display: flex;
         justify-content: center;
         gap: 30px;
+        align-items: center;
 
     }
 
@@ -674,7 +681,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    margin-bottom: -70px;
+    margin-bottom: -45px;
 
     .footer-container {
         background-color: #D63E0D;
@@ -746,6 +753,7 @@ footer {
     position: relative;
     left: 85vw;
     width: 40px;
+    filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
 }
 
 @media (min-width:100px) and (max-width:328px) {
