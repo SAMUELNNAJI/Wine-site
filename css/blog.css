@@ -15,7 +15,7 @@
 
 .color-scroll {
     animation: color-scroll 5s ease backwards;
-     animation-timeline: view(50% 0%);
+    animation-timeline: view(50% 0%);
 }
 
 @keyframes color-scroll {
@@ -25,13 +25,13 @@
     }
 
     50% {
-         background-color: #511502;
+        background-color: #511502;
         transform: translateX(100%);
     }
 
-    100%{
-         background-color: #511502;
-        transform: translateX(0%); 
+    100% {
+        background-color: #511502;
+        transform: translateX(0%);
     }
 }
 
@@ -262,7 +262,7 @@ hr {
         display: grid;
         grid-template-rows: subgrid;
         grid-row: span 5;
-        gap: 2px;
+        gap: 5px;
         width: 310px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 14px;
@@ -272,7 +272,7 @@ hr {
 
     }
 
-    a:not(.btn){
+    a:not(.btn) {
         text-decoration: none;
         color: #210C0C;
     }
@@ -381,12 +381,34 @@ footer {
     position: relative;
     left: 85vw;
     width: 40px;
-     filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
+    filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
 }
 
 
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
 
+.pagination button {
+    padding: 8px 14px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
+.pagination button.active {
+    background: #333;
+    color: #fff;
+}
+
+.pagination button:hover {
+    background: #555;
+    color: #fff;
+}
 
 
 @media (max-width:1150px) {
@@ -425,7 +447,7 @@ footer {
 
     }
 
-      footer {
+    footer {
         .footer-container {
             padding-inline: 83px;
         }
@@ -449,17 +471,16 @@ footer {
 }
 
 /* Animations */
-.zoom{
+.zoom {
     animation: zoom 1s linear;
 }
 
 @keyframes zoom {
-    from{
+    from {
         transform: scale(0.5);
     }
 
-    to{
-       transform: scale(1);
+    to {
+        transform: scale(1);
     }
 }
-

@@ -1,4 +1,4 @@
-const postsPerPage = 15;
+const postsPerPage = 12;
 
 const posts = document.querySelectorAll(".post-card");
 const pagination = document.getElementById("pagination");
@@ -12,7 +12,7 @@ function showPage(page) {
 
   posts.forEach((post, index) => {
     post.style.display =
-      index >= start && index < end ? "block" : "none";
+      index >= start && index < end ? "grid" : "none";
   });
 }
 
