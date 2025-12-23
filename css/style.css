@@ -15,7 +15,7 @@
 
 .color-scroll {
     animation: color-scroll 5s ease backwards;
-     animation-timeline: view(50% 0%);
+    animation-timeline: view(50% 0%);
 }
 
 @keyframes color-scroll {
@@ -25,13 +25,13 @@
     }
 
     50% {
-         background-color: #511502;
+        background-color: #511502;
         transform: translateX(100%);
     }
 
-    100%{
-         background-color: #511502;
-        transform: translateX(0%); 
+    100% {
+        background-color: #511502;
+        transform: translateX(0%);
     }
 }
 
@@ -79,6 +79,7 @@ body {
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fefcfc;
+
 }
 
 
@@ -114,7 +115,7 @@ header {
         backdrop-filter: blur(10px);
         box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
         margin-left: 192px;
-        
+
     }
 
     ul {
@@ -188,6 +189,7 @@ svg {
     /* height: 100vh; */
     position: relative;
     overflow: hidden;
+   
 
     .hero-content {
         position: absolute;
@@ -197,12 +199,14 @@ svg {
 
     .desktop-video {
         display: none;
+        
     }
 
     .hero-video-mobile {
         width: 100%;
         object-fit: cover;
         border-radius: 0 0 32px 32px;
+         content-visibility: visible;
 
     }
 
@@ -653,8 +657,8 @@ svg {
 
 
     input {
-       display: block;
-       margin: auto;
+        display: block;
+        margin: auto;
         width: 80vw;
         height: 40px;
         border-radius: 18px;
@@ -757,7 +761,7 @@ footer {
 }
 
 @media (min-width:100px) and (max-width:328px) {
-   
+
 
     .hero {
         height: 100vh;
@@ -793,45 +797,45 @@ footer {
 
 
         .worldwide {
-        width: 280px;
-        height: 70px;
-        top: 85vh;
-       
+            width: 280px;
+            height: 70px;
+            top: 85vh;
 
-        img {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-        }
 
-        .img2 {
-            margin-left: -15px;
-        }
+            img {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
 
-        .img3 {
-            margin-left: -15px;
-        }
+            .img2 {
+                margin-left: -15px;
+            }
 
-        .img4 {
-            margin-left: -15px;
-        }
+            .img3 {
+                margin-left: -15px;
+            }
 
-        .img5 {
-            margin-left: -15px;
-        }
+            .img4 {
+                margin-left: -15px;
+            }
 
-        .star {
-            width: 60px;
-            height: auto;
-            margin-top: 18px;
-            margin-bottom: -20px;
-        }
+            .img5 {
+                margin-left: -15px;
+            }
 
-        p {
-            font-size: 1rem;
-            padding-top: 10px;
+            .star {
+                width: 60px;
+                height: auto;
+                margin-top: 18px;
+                margin-bottom: -20px;
+            }
+
+            p {
+                font-size: 1rem;
+                padding-top: 10px;
+            }
         }
-    }
 
 
 
@@ -841,11 +845,11 @@ footer {
 }
 
 @media (min-width:768px) and (max-width: 1024px) {
-     header{
+    header {
         .logo img {
-           width: 300px;
-           margin-left: 15px;
-       }
+            width: 300px;
+            margin-left: 15px;
+        }
     }
 
     .hero {
@@ -958,7 +962,7 @@ footer {
 
 @media (max-width:1150px) {
 
-    .hero{
+    .hero {
         height: 100vh;
     }
 
@@ -968,6 +972,7 @@ footer {
 
     .hero-video-mobile {
         height: 100vh;
+        content-visibility: visible;
     }
 
     header {
@@ -1158,6 +1163,7 @@ footer {
 
     footer {
         overflow-y: hidden;
+
         .footer-container {
             padding-inline: 83px;
         }
@@ -1272,5 +1278,3 @@ footer {
         transform: translateX(0vh);
     }
 }
-
-
