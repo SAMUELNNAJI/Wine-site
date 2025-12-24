@@ -35,6 +35,10 @@
     }
 }
 
+/* Target link */
+nav a[href*="blog"]{
+    color: #D63E0D;
+}
 
 .fadein {
     opacity: 0;

@@ -53,6 +53,10 @@
     }
 }
 
+/* Target link */
+nav a[href*="About"]{
+    color: #D63E0D;
+}
 
 
 .fadein {

@@ -22,6 +22,10 @@
     transition: all 0.7s ease;
 }
 
+/* Target link */
+nav a[href*="product"]{
+    color: #D63E0D;
+}
 
 * {
     margin: 0;
