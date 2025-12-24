@@ -293,7 +293,7 @@ hr {
     h5 {
         font-size: clamp(18px, 4vw, 20px);
         text-align: left;
-        color: #FDA038;
+        color: #cececeff;
         margin-bottom: 10px;
     }
 /* flip styles */
@@ -405,15 +405,9 @@ hr {
     .list {
         display: flex;
         align-items: center;
+        gap: 10px;
         font-weight: 500;
-        margin-left: -20px;
     }
-
-    .list img {
-        width: 30px;
-        height: 30px;
-    }
-
 
 }
 
@@ -604,7 +598,7 @@ ul {
   background-color: #000000; 
   border-radius: 30px; 
   padding: 20px; 
-  height: 30px;
+  height: 50px;
   width: 250px;
   margin-top: 10px;
 }
@@ -656,7 +650,7 @@ ul {
 
 .example-1 .icon-content .link svg {
   width: 50px;
-  height: 29px;
+  height: 28px;
   fill: #fff; 
 }
 
@@ -669,7 +663,7 @@ ul {
 }
 
 .example-1 .icon-content .link[data-social="dribbble"]:hover {
-  color: #686868;
+  color: #ffffff;
 }
 
 
