@@ -176,6 +176,13 @@ svg {
 
 }
 
+/* target nav link */
+nav a[href*="product"]{
+    color: #D63E0D;
+}
+
+
+
 .hero-section::before{
     content: '';
     position: absolute;
