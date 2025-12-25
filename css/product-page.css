@@ -209,7 +209,7 @@ svg {
   float: left;
 }
 #slider ul li:nth-child(1){
-  background: url(/Assset/images/carosel\ 1.webp);
+  background: url(/Assset/images/carosel.jpg);
   background-size: cover;
   background-position: center center;
 }
