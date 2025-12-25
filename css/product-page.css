@@ -233,7 +233,7 @@ nav a[href*="product"]{
   background-position: center center;
 }
 #slider ul li:nth-child(2){
-  background: url(/Assset/images/carosel.jpeg);
+  background: url(/Assset/images/carosel2.jpeg);
   background-size: cover;
   background-position: center center;
 }
@@ -252,6 +252,7 @@ nav a[href*="product"]{
   background-size: cover;
   background-position: center center;
 }
+
 #prev, #next{
   z-index: 999;
   position: absolute;
