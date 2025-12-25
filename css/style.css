@@ -186,7 +186,7 @@ svg {
 }
 
 /* Target link */
-nav a[href*="#"]{
+nav a[href*="index"]{
     color: #D63E0D !important;
 }
 

@@ -22,10 +22,6 @@
     transition: all 0.7s ease;
 }
 
-/* Target link */
-nav a[href*="product"]{
-    color: #D63E0D;
-}
 
 * {
     margin: 0;
@@ -78,6 +74,13 @@ aside{
 footer{
     
 }
+
+
+/* Target link */
+nav a[href*="product"]{
+    color: #D63E0D !important;
+}
+
 
 header {
     /* position: absolute; */
