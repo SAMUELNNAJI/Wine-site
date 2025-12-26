@@ -374,18 +374,19 @@ footer {
 
 
 
+
 /* Floating */
-.floating-top {
+.back-to-top {
     width: 100%;
     position: sticky;
     bottom: 10px;
 }
 
-.floating-top img {
+.back-to-top img {
     position: relative;
     left: 85vw;
     width: 40px;
-    filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
+     filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
 }
 
 
@@ -465,8 +466,7 @@ footer {
         }
 
     }
-
-    .floating-top img {
+  .back-to-top img {
         position: relative;
         left: 94vw;
         width: 40px;

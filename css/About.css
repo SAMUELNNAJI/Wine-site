@@ -99,6 +99,7 @@ body {
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fefcfc;
+    scroll-behavior: smooth;
 }
 
 
@@ -721,13 +722,13 @@ ul {
 }
 
 /* Floating */
-.floating-top {
+.back-to-top {
     width: 100%;
     position: sticky;
     bottom: 10px;
 }
 
-.floating-top img {
+.back-to-top img {
     position: relative;
     left: 85vw;
     width: 40px;
@@ -823,7 +824,7 @@ ul {
         gap: 157px;
     }
 
-    .floating-top img {
+    .back-to-top img {
         position: relative;
         left: 94vw;
         width: 40px;

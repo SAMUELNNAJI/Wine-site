@@ -173,9 +173,9 @@
             </div>
         </div>
     </footer>
-    <div class="floating-top">
-            <a href="#"><img src="./Assset/icons/up-arrow.png" alt=""></a>
-        </div>
+    <div class="back-to-top">
+        <a href="#"><img src="./Assset/icons/up-arrow.png" alt=""></a>
+    </div>
     <script>
         function showMobileMenu() {
             const MobileMenu = document.querySelector('.MobileMenu');
@@ -185,6 +185,16 @@
             const MobileMenu = document.querySelector('.MobileMenu');
             MobileMenu.style.display = 'none';
         }
+
+         // back to top here
+         const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
     </script>
 </body>
 

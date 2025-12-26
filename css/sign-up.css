@@ -432,13 +432,13 @@ footer {
 
 
 /* Floating */
-.floating-top {
+.back-to-top {
     width: 100%;
     position: sticky;
     bottom: 10px;
 }
 
-.floating-top img {
+.back-to-top img {
     position: relative;
     left: 85vw;
     width: 40px;
@@ -500,7 +500,7 @@ footer {
 
     }
 
-    .floating-top img {
+      .back-to-top img {
         position: relative;
         left: 94vw;
         width: 40px;
