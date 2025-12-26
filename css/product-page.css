@@ -239,7 +239,7 @@ nav a[href*="product"]{
   float: left;
 }
 #slider ul li:nth-child(1){
-  background: url(../Assset/images/carosel.jpeg);
+  background: url(../Assset/images/blog-img13.webp);
   background-size: cover;
   background-position: center center;
 }
