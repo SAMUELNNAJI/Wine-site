@@ -210,8 +210,19 @@ nav a[href*="product"]{
  transform: translate(-50%,-50%);
  z-index: 999;
  color: #fcece6;
- font-size: clamp(30px,4vw,60px);
- text-shadow: #511502 2px 2px;
+
+
+ h2{
+     font-size: clamp(30px,4vw,60px);
+     text-align: center;
+      text-shadow: #511502 2px 2px;
+ }
+
+ p{
+    font-size: clamp(17px, 3vw, 18px);
+     text-align: center;
+      text-shadow: #1e0802 1px 1px;
+ }
 }
 
 #slider ul{
