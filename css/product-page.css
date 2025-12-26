@@ -239,27 +239,27 @@ nav a[href*="product"]{
   float: left;
 }
 #slider ul li:nth-child(1){
-  background: url(../Assset/images/blog-img13.webp);
+    background: url('../Assset/images/carosel.jpeg');
   background-size: cover;
   background-position: center center;
 }
 #slider ul li:nth-child(2){
-  background: url(../Assset/images/carosel2.jpeg);
+  background: url('../Assset/images/carosel2.jpeg');
   background-size: cover;
   background-position: center center;
 }
 #slider ul li:nth-child(3){
-  background: url(../Assset/images/carosel3.jpeg);
+  background: url('../Assset/images/carosel3.jpeg');
   background-size: cover;
   background-position: center center;
 }
 #slider ul li:nth-child(4){
-  background: url(../Assset/images/blog-img15.webp);
+  background: url('../Assset/images/blog-img15.webp');
   background-size: cover;
   background-position: center center;
 }
 #slider ul li:nth-child(5){
-  background: url(../Assset/images/carosel4.jpeg);
+  background: url('../Assset/images/carosel4.jpeg');
   background-size: cover;
   background-position: center center;
 }
