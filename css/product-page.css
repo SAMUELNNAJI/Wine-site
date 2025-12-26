@@ -183,7 +183,7 @@ nav a[href*="product"] {
 
 
 
-.hero-section::before {
+#Slider::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -212,17 +212,15 @@ nav a[href*="product"] {
     color: #fcece6;
 
 
+
     h2 {
-        font-size: clamp(30px, 4vw, 60px);
+        font-size: clamp(36px, 8vw, 80px);
         text-align: center;
         text-shadow: #511502 2px 2px;
+        -webkit-text-stroke: #6e1d02 1px;
     }
 
-    p {
-        font-size: clamp(17px, 3vw, 18px);
-        text-align: center;
-        text-shadow: #1e0802 1px 1px;
-    }
+   
 }
 
 #slider ul {
@@ -288,11 +286,11 @@ nav a[href*="product"] {
 }
 
 #prev {
-    left: 50px;
+    left: 5vw;
 }
 
 #next {
-    right: 50px;
+    right: 5vw;
 }
 
 #slider #num {
@@ -508,3 +506,4 @@ footer {
         }
 
     }
+}
