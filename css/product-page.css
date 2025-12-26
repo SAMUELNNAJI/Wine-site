@@ -207,6 +207,7 @@ nav a[href*="product"] {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     z-index: 999;
     color: #fcece6;
@@ -214,13 +215,12 @@ nav a[href*="product"] {
 
 
     h2 {
-        font-size: clamp(36px, 8vw, 80px);
+        font-size: clamp(45px, 6vw, 80px);
         text-align: center;
-        text-shadow: #511502 2px 2px;
-        -webkit-text-stroke: #6e1d02 1px;
+        text-shadow: #511502 4px 8px 10px;
     }
 
-   
+
 }
 
 #slider ul {
@@ -435,7 +435,7 @@ footer {
     position: relative;
     left: 85vw;
     width: 40px;
-     filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
+    filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
 }
 
 
@@ -459,37 +459,38 @@ footer {
         padding: 20px;
     }
 
-   
-    @media (min-width: 1200px) {
+}
 
-        .mobile-hanburger {
-            display: none;
+@media (min-width: 1200px) {
+
+    .mobile-hanburger {
+        display: none;
+    }
+
+    header {
+        .logo img {
+            width: 200px;
+            margin-inline: 40.5px;
         }
 
-        header {
-            .logo img {
-                width: 200px;
-                margin-inline: 40.5px;
-            }
+    }
 
+    footer {
+        .footer-container {
+            padding-inline: 83px;
         }
 
-        footer {
-            .footer-container {
-                padding-inline: 83px;
-            }
-
-            p:has(.logo) {
-                padding-left: -5px;
-            }
-
-            p:has(.logo) {
-                padding-left: -50px;
-            }
-
+        p:has(.logo) {
+            padding-left: -5px;
         }
 
-          .back-to-top img {
+        p:has(.logo) {
+            padding-left: -50px;
+        }
+
+    }
+
+    .back-to-top img {
         position: relative;
         left: 94vw;
         width: 40px;
@@ -497,12 +498,11 @@ footer {
 
 
 
-        .sign-in {
+    .sign-in {
 
-            .wine {
-                display: flex;
-            }
+        .wine {
+            display: flex;
         }
-
     }
+
 }
