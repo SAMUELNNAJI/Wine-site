@@ -181,20 +181,53 @@ nav a[href*="product"] {
     color: #D63E0D;
 }
 
+hr {
+    width: 100px;
+    display: block;
+    margin: auto;
+    border: #210C0C 2px solid;
+}
 
 
-#Slider::before {
+#slider::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(45deg, #511402a0, #d63f0dc3, #511402cb);
-    opacity: 0.7;
-
+    background: linear-gradient(45deg, #511402a0, #3f1203c3, #511402cb);
+    opacity: 0.5;
+    width: 100vw;
+    height: 70vh;
+    z-index: 1;
 }
 
 
 
+@keyframes pargraph-animation {
+    0% {
+        content: "Shop Your Best Wine Here";
+    }
 
+    20% {
+        content: "Experience The Taste Of Good Wine";
+    }
+
+    40% {
+        content: "Share Love With A Bottle Of Wine";
+    }
+
+    60% {
+        content: "Celebrate With A Glass Of Wine";
+    }
+
+    80% {
+        content: "Healthy Wine Healthy Living";
+    }
+
+    100% {
+        content: "Let Be Your Wine Plug Today!";
+
+    }
+}
 
 #slider {
     width: 100vw;
@@ -212,7 +245,19 @@ nav a[href*="product"] {
     z-index: 999;
     color: #fcece6;
 
+    p::before {
+        content: "Shop Your Best Wine Here";
+        animation: pargraph-animation 30s infinite cubic-bezier(0.39, 0.575, 0.565, 9);
+    }
 
+
+
+    p {
+        text-align: center;
+        font-size: clamp(18px, 3vw, 25px);
+        font-weight: 600;
+        text-shadow: #511502 4px 8px 10px;
+    }
 
     h2 {
         font-size: clamp(45px, 6vw, 80px);
@@ -298,6 +343,7 @@ nav a[href*="product"] {
     bottom: 20px;
     width: 100%;
     text-align: center;
+    z-index: 1;
 }
 
 #slider #num div {
