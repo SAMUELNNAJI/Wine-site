@@ -16,7 +16,7 @@
 
         <div class="mobile">
             <ul class="MobileMenu">
-                <li ondblclick=hideMobileMenu()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                <li ondblclick=hideMobileMenu()><a href="" ><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 -960 960 960" width="24px" fill="#000">
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
@@ -42,7 +42,7 @@
                             src="./Assset/icons/signup-icon.png" alt=""></a></li>
             </ul>
         </nav>
-        <div class="mobile-hanburger">
+        <div class="mobile-hanburger" >
             <li onclick=showMobileMenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px"
                         viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -238,7 +238,8 @@
                     <a href="#" class="btn">SHOP NOW</a>
                 </div>
                 <div>
-                    <img src="./Assset/images/stickers-ripe-grapes-wine-glass-removebg-preview.png" alt="" class="scroll-right">
+                    <img src="./Assset/images/stickers-ripe-grapes-wine-glass-removebg-preview.png" alt=""
+                        class="scroll-right">
                 </div>
             </div>
 
@@ -489,8 +490,8 @@
             MobileMenu.style.display = 'none';
         }
 
-         // back to top here
-         const backToTop = document.querySelector('.back-to-top');
+        // back to top here
+        const backToTop = document.querySelector('.back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTop.style.display = 'block';

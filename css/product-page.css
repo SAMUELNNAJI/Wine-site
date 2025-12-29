@@ -78,6 +78,7 @@ body {
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fefcfc;
+    user-select: none;
 }
 
 
@@ -247,7 +248,8 @@ hr {
 
     p::before {
         content: "Shop Your Best Wine Here";
-        animation: pargraph-animation 39s infinite cubic-bezier(0.39, 0.575, 0.565, 9);
+        animation: pargraph-animation 39s infinite;
+
     }
 
 

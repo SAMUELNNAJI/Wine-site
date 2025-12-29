@@ -100,6 +100,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fefcfc;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 
