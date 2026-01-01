@@ -38,6 +38,8 @@
 
         </div>
 
+
+
         <nav class="desktop-menu">
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -57,19 +59,50 @@
 
         </div>
 
-        <div>
-            <!-- <i class="fa-solid fa-basket-shopping" color="white"></i> -->
+        <div class="cart-box">
+            <div class="cart-icon">
+                <i class="fas fas fa-cart-arrow-down non-empty"></i>
+            </div>
+            <div class="whole-cart-window hide">
+                <h2>Shopping Bag</h2>
+                <div class="cart-wrapper">
+                    <div class="cart-item">
+                        <img src="./Assset/images/blog-img11.webp" alt="">
+                        <div class="details">
+                            <h3>Item Name</h3>
+                            <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+                            <span class="quantity">Quantity: 1</span>
+                            <span class="price">$23.44</span>
+                        </div>
+                        <div class="cancle"><i class="fas far fa-window-close"></i></div>
+                    </div>
+                     <div class="cart-item">
+                        <img src="./Assset/images/blog-img11.webp" alt="">
+                        <div class="details">
+                            <h3>Item Name</h3>
+                            <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+                            <span class="quantity">Quantity: 1</span>
+                            <span class="price">$23.44</span>
+                        </div>
+                        <div class="cancle"><i class="fas far fa-window-close"></i></div>
+                    </div>
+                </div>
+
+                <div class="subtotal">Subtotal: $0.00</div>
+                <div class="checkout btn">checkout</div>
+                <div class="view-cart btn">View Cart</div>
+            </div>
         </div>
     </header>
 
 
     <main>
-       
+
         <div id="slider">
-             <div class="TEXT">
-            <h2>Wine Store</h2>
-            <p class="pargraph-animation"></p>            
-        </div>
+            <div class="TEXT">
+                <h2>Wine Store</h2>
+                <p class="pargraph-animation"></p>
+            </div>
             <ul id="sliderWrap">
                 <li></li>
                 <li></li>
@@ -92,6 +125,8 @@
 
 
 
+        <!-- SHOP SECTION -->
+        <section></section>
     </main>
 
 
@@ -161,8 +196,8 @@
             MobileMenu.style.display = 'none';
         }
 
-         // back to top here
-         const backToTop = document.querySelector('.back-to-top');
+        // back to top here
+        const backToTop = document.querySelector('.back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTop.style.display = 'block';
