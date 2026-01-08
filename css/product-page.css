@@ -187,7 +187,7 @@ svg {
     /* display: none; */
     position: relative;
     z-index: 99999999999999;
-
+    left: -20px;
 }
 
 /* target nav link */
@@ -432,7 +432,7 @@ div>i {
 }
 
 .cart-box {
-    width: clamp(370px, 32vw, 76%);
+    width: clamp(350px, 32vw, 76%);
     margin-right: 10px;
     position: absolute;
     top: 0;
@@ -685,7 +685,6 @@ footer {
 
     header {
         justify-content: space-around;
-        gap: 40px;
     }
 
     .blog-container {
@@ -696,6 +695,9 @@ footer {
         padding: 20px;
     }
 
+    .cart-icon {
+        left: -80px;
+    }
 }
 
 @media (min-width: 1200px) {
