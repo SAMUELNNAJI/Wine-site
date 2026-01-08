@@ -187,6 +187,11 @@ cartIcon.addEventListener('mouseleave', () => {
 
 })
 
+// Support touch/click on mobile to open/close the cart window
+cartIcon.addEventListener('click', () => {
+  wholeCartWindow.classList.toggle('hide')
+})
+
 wholeCartWindow.addEventListener('mouseover', () => {
   wholeCartWindow.inWindow = 1
 })
@@ -237,6 +242,7 @@ function updateCartUI() {
   }
   else
     cartIcon.classList.remove('non-empty')
+
 }
 
 document.addEventListener('DOMContentLoaded', () => { updateCartUI() })
