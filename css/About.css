@@ -274,10 +274,11 @@ hr {
         font-weight: 500;
         margin-bottom: 20px;
         padding: 20px;
-        max-width: 500px;
+        max-width: 550px;
         display: block;
         margin: auto;
         text-align: center;
+        font-size: clamp(18px, 4vw, 19px);
     }
 
     h3 {
@@ -802,6 +803,9 @@ footer {
 
 
     footer {
+        position: relative;
+        z-index: 9999;
+
         .footer-container {
             padding-inline: 83px;
         }

@@ -420,6 +420,8 @@ div>i {
     right: 0;
     margin-right: 20px;
     z-index: 9999999999999999999;
+    box-shadow: 20px 20px 60px #656565;
+
 }
 
 .cart-icon {
@@ -600,6 +602,12 @@ span {
     font-weight: 500;
 }
 
+.card-item p span:nth-child(1) {
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #2c2b2b;
+}
+
 .add-to-cart-btn {
     width: fit-content;
     margin: auto;
@@ -740,6 +748,10 @@ footer {
 
 
     footer {
+
+        position: relative;
+        z-index: 9999;
+
         .footer-container {
             padding-inline: 83px;
         }

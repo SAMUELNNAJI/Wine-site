@@ -488,6 +488,9 @@ footer {
 
 
     footer {
+        position: relative;
+        z-index: 9999;
+
         .footer-container {
             padding-inline: 83px;
         }
