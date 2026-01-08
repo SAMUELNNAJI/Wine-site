@@ -1,95 +1,129 @@
-var responsiveSlider = function(){
-  
+var responsiveSlider = function () {
+
   var slider = document.getElementById("slider");
   var sliderWidth = slider.offsetWidth;
   var slideList = document.getElementById("sliderWrap");
   var items = slideList.querySelectorAll("li").length;
-  
+
   var count = 0;
-  
+
   var num = document.getElementById("num");
   slideNums = num.querySelectorAll("div");
-  
+
   var prev = document.getElementById("prev");
   var next = document.getElementById("next");
-  
-  var addColor = function(pos){
+
+  var addColor = function (pos) {
     slideNums[pos].style.boxShadow = "0 0 10px 2px rgb(196, 253, 255)";
     slideNums[pos].style.background = "#fff";
   }
-  
-  var removeColor = function(pos){
+
+  var removeColor = function (pos) {
     slideNums[pos].style.boxShadow = "0 0 10px 2px transparent";
     slideNums[pos].style.background = "rgba(255, 255, 255, .3)";
   }
-  
+
   addColor(0);
-  
-  slideNums[0].addEventListener("click", function(){
+
+  slideNums[0].addEventListener("click", function () {
     removeColor(count);
     count = 0;
     addColor(count);
     slideList.style.left = "0px";
   });
-  slideNums[1].addEventListener("click", function(){
+  slideNums[1].addEventListener("click", function () {
     removeColor(count);
     count = 1;
     addColor(count);
     slideList.style.left = "-" + count * sliderWidth + "px";
   });
-  slideNums[2].addEventListener("click", function(){
+  slideNums[2].addEventListener("click", function () {
     removeColor(count);
     count = 2;
     addColor(count);
     slideList.style.left = "-" + count * sliderWidth + "px";
   });
-  slideNums[3].addEventListener("click", function(){
+  slideNums[3].addEventListener("click", function () {
     removeColor(count);
     count = 3;
     addColor(count);
     slideList.style.left = "-" + count * sliderWidth + "px";
   });
-  slideNums[4].addEventListener("click", function(){
+  slideNums[4].addEventListener("click", function () {
     removeColor(count);
     count = 4;
     addColor(count);
     slideList.style.left = "-" + count * sliderWidth + "px";
   });
-  
-  window.addEventListener("resize", function(){
+
+  window.addEventListener("resize", function () {
     sliderWidth = slider.offsetWidth;
     slideList.style.left = "-" + count * sliderWidth + "px";
   });
-  
-  var prevSlide = function(){
+
+  var prevSlide = function () {
     removeColor(count);
-    if(!count) count = items - 1;
+    if (!count) count = items - 1;
     else count--;
     addColor(count);
     slideList.style.left = "-" + count * sliderWidth + "px";
   }
-  
-  var nextSlide = function(){
+
+  var nextSlide = function () {
     removeColor(count);
-    if(count == items - 1) count = 0;
+    if (count == items - 1) count = 0;
     else count++;
     addColor(count);
-    slideList.style.left =  "-" + count * sliderWidth + "px";
+    slideList.style.left = "-" + count * sliderWidth + "px";
   }
- 
-  next.addEventListener("click", function(){
+
+  next.addEventListener("click", function () {
     nextSlide();
-  }); 
- 
-  prev.addEventListener("click", function(){
+  });
+
+  prev.addEventListener("click", function () {
     prevSlide();
   });
-  
-  setInterval(function(){
+
+  setInterval(function () {
     nextSlide();
   }, 8000);
 }
 
-window.onload = function(){
+window.onload = function () {
   responsiveSlider();
 }
+
+
+// product section
+
+const cartIcon = document.querySelector('.fa-cart-arrow-down')
+const wholeCartWindow = document.querySelector('.whole-cart-window')
+wholeCartWindow.inWindow = 0
+
+cartIcon.addEventListener('mouseover', () => {
+  if (wholeCartWindow.classList.contains('hide'))
+    (wholeCartWindow.classList.remove('hide'))
+})
+
+cartIcon.addEventListener('mouseleave', () => {
+  // if (wholeCartWindow.classList.contains('hide'))
+  setTimeout(() => {
+    if (wholeCartWindow.inWindow == 0)
+      wholeCartWindow.classList.add('hide')
+
+  }, 500)
+
+})
+
+wholeCartWindow.addEventListener('mouseover', () => {
+  wholeCartWindow.inWindow = 1
+})
+
+wholeCartWindow.addEventListener('mouseleave', () => {
+  wholeCartWindow.inWindow = 0
+  wholeCartWindow.classList.add('hide')
+})
+
+
+
