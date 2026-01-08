@@ -432,7 +432,7 @@ div>i {
 }
 
 .cart-box {
-    width: clamp(350px, 32vw, 76%);
+    width: clamp(380px, 32vw, 76%);
     margin-right: 10px;
     position: absolute;
     top: 0;
@@ -697,6 +697,10 @@ footer {
 
     .cart-icon {
         left: -80px;
+    }
+
+    .cart-box {
+        width: 90%;
     }
 }
 
