@@ -105,7 +105,7 @@ body {
 
 
 header {
-    position: absolute;
+    position: fixed;
     top: 20px;
     width: 100vw;
     display: flex;
@@ -378,7 +378,7 @@ hr {
     .Our-Service {
         display: flex;
         justify-content: space-around;
-        align-items:baseline;
+        align-items: baseline;
         margin: 10px 20px;
         flex-wrap: wrap;
         margin-top: 70px;
@@ -389,8 +389,8 @@ hr {
     img {
         width: 300px;
         display: flex;
-        justify-content: center; 
-         align-items: center;
+        justify-content: center;
+        align-items: center;
         margin-inline: 20px;
     }
 
@@ -399,7 +399,7 @@ hr {
         margin-bottom: 20px;
         /* max-width: 500px; */
         color: #210C0C;
-         max-width: 400px;
+        max-width: 400px;
     }
 
     p {
@@ -489,7 +489,7 @@ footer {
     padding: 20px;
     row-gap: 30px;
     margin-top: -3%;
-    
+
 
     h3 {
         text-align: initial;
@@ -763,9 +763,9 @@ footer {
         padding: 20px;
     }
 
-    .Service{
+    .Service {
         .Our-Service {
-          align-items:center;
+            align-items: center;
         }
 
     }
@@ -773,11 +773,11 @@ footer {
 
 /* TOtally MObile */
 @media (max-width:769px) {
-     .faq{
+    .faq {
         gap: 40px;
 
-        .details{
-              margin-left: 0px;
+        .details {
+            margin-left: 0px;
         }
     }
 
@@ -841,7 +841,7 @@ footer {
             gap: 20%;
         }
 
-        h3{
+        h3 {
             max-width: 500px;
         }
 

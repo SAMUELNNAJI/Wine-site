@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vintner's Corner</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -15,21 +19,27 @@
         </div>
 
         <div class="mobile">
+
             <ul class="MobileMenu">
-                <li ondblclick=hideMobileMenu()><a href="" ><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                            viewBox="0 -960 960 960" width="24px" fill="#000">
+                <li ondblclick=hideMobileMenu()><a href="" style="position: relative; z-index: 99999;"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#000">
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg></a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./About.html">About</a></li>
                 <li><a href="./product-page.html">Product</a></li>
                 <li><a href="./Contact-Us.html">Contact</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
                             src="./Assset/icons/signup-icon.png" alt=""></a></li>
+
             </ul>
+
         </div>
+
+
 
         <nav class="desktop-menu">
             <ul>
@@ -38,24 +48,52 @@
                 <li><a href="./product-page.html">Product</a></li>
                 <li><a href="./Contact-Us.html">Contact</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
+                <li class="sign-up"><a href="./sign-in.htm#sign-in" class="btn">Sign Up <img
                             src="./Assset/icons/signup-icon.png" alt=""></a></li>
             </ul>
         </nav>
-        <div class="mobile-hanburger" >
-            <li onclick=showMobileMenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px"
+        <div class="mobile-hanburger">
+            <li onclick=showMobileMenu()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="40px"
                         viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                     </svg></a></li>
 
         </div>
 
-        <div>
-            <i class="fa-solid fa-basket-shopping" color="white"></i>
+        <div class="cart-box">
+            <div class="cart-icon">
+                <i class="fas fas fa-cart-arrow-down" style="cursor: pointer;"></i>
+            </div>
+            <div class="whole-cart-window hide">
+                <h2>Shopping Bag</h2>
+                <div class="cart-wrapper">
+                    <!-- <div class="cart-item">
+                        <img src="./Assset/images/blog-img11.webp" alt="">
+                        <div class="details">
+                            <h3>Item Name</h3>
+                            <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+                            <span class="quantity">Quantity: 1</span>
+                            <span class="price">$23.44</span>
+                        </div>
+                        <div class="cancle"><i class="fas far fa-window-close"></i></div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="./Assset/images/blog-img11.webp" alt="">
+                        <div class="details">
+                            <h3>Item Name</h3>
+                            <p>Lorem ipsum2 dolor sit. Lorem ipsum dolor sit.</p>
+                            <span class="quantity">Quantity: 1</span>
+                            <span class="price">$23.44</span>
+                        </div>
+                        <div class="cancle"><i class="fas far fa-window-close"></i></div>
+                    </div> -->
+                </div>
+
+                <div class="subtotal">Subtotal: $0.00</div>
+                <div class="checkout btn">checkout</div>
+                <div class="view-cart btn">View Cart</div>
+            </div>
         </div>
-
-
-
     </header>
     <main>
 
@@ -111,122 +149,83 @@
         </section>
 
         <section class="seller">
-            <div class="seller">
-                <h3>BEST SELLER</h3>
-                <hr class="color-scroll">
-                <p>Best Sell Out Product of The Week</p>
-
-                <div class="container">
-                    <div class="product blob">
-                        <div><img src="./Assset/images/Chula Natural Non Alcoholic Red wine.webp"
-                                alt="Chula Natural Wine">
-                        </div>
-                        <h4>Chula Natural Non Alcoholic</h4>
-                        <div class="cart">
-                            <div>
-                                <p><del>$30.00</del> <span>$25.00</span></p>
-                            </div>
-                            <a href="#" class="btn cart-btn">
-                                <div class="cart-button">
-
-                                    <p>Add Cart</p>
-                                    <img src="./Assset/images/pngegg.png" class="cart-img">
-                                </div>
-                            </a>
-                        </div>
-
+            <div class="card-wrapper">
+                <div class="card-item" data-id="1">
+                    <img src="./Assset/images/shop1.jpg" alt="">
+                    <div class="details">
+                        <h3>Declan Sweet Sparkling</h3>
+                        <p>
+                            <span>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</span>
+                        </p>
+                        <span class="price"><del>$30.00</del>$23.44</span>
+                        <span class="add-to-cart-btn btn">Add to Cart</span>
                     </div>
 
-                    <div class="product">
-                        <div><img src="./Assset/images/shop1.jpg" alt="Declan Red Wine"></div>
-                        <h4>Declan Sweet Sparkling Red</h4>
-                        <div class="cart">
-                            <div>
-                                <p><del>$30.00</del> <span>$25.00</span></p>
-                            </div>
-                            <a href="#" class="btn cart-btn">
-                                <div class="cart-button">
-
-                                    <p>Add Cart</p>
-                                    <img src="./Assset/images/pngegg.png" class="cart-img">
-                                </div>
-                            </a>
-                        </div>
-
+                </div>
+                <div class="card-item" data-id="2">
+                    <img src="./Assset/images/shop2.jpg" alt="">
+                    <div class="details">
+                        <h3>Eisberg Alcohol Wine</h3>
+                        <p>
+                            <span>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</span>
+                        </p>
+                        <span class="price"><del>$40.00</del>$33.44</span>
+                        <span class="add-to-cart-btn btn">Add to Cart</span>
                     </div>
 
-                    <div class="product">
-                        <div><img src="./Assset/images/shop2.jpg" alt="Eisberg Alcohol Wine"></div>
-                        <h4>Eisberg Alcohol Wine</h4>
-                        <div class="cart">
-                            <div>
-                                <p><del>$30.00</del> <span>$25.00</span></p>
-                            </div>
-                            <a href="#" class="btn cart-btn">
-                                <div class="cart-button">
+                </div>
 
-                                    <p>Add Cart</p>
-                                    <img src="./Assset/images/pngegg.png" class="cart-img">
-                                </div>
-                            </a>
-                        </div>
-
+                <div class="card-item" data-id="3">
+                    <img src="./Assset/images/shop3.jpg" alt="">
+                    <div class="details">
+                        <h3>Eva-Sparkling-Red-Wine</h3>
+                        <p>
+                            <span>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</span>
+                        </p>
+                        <span class="price"><del>$20.00</del>$18.44</span>
+                        <span class="add-to-cart-btn btn">Add to Cart</span>
                     </div>
 
-                    <div class="product">
-                        <div><img src="./Assset/images/shop3.jpg" alt="Eva-Sparkling-Red-Wine"></div>
-                        <h4>Eva-Sparkling-Red-Wine</h4>
-                        <div class="cart">
-                            <div>
-                                <p><del>$30.00</del> <span>$25.00</span></p>
-                            </div>
-                            <a href="#" class="btn cart-btn">
-                                <div class="cart-button">
+                </div>
 
-                                    <p>Add Cart</p>
-                                    <img src="./Assset/images/pngegg.png" class="cart-img">
-                                </div>
-                            </a>
-                        </div>
-
+                <div class="card-item" data-id="4">
+                    <img src="./Assset/images/shop4.jpg" alt="">
+                    <div class="details">
+                        <h3>J & W Blue</h3>
+                        <p>
+                            <span>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</span>
+                        </p>
+                        <span class="price"><del>$50.00</del>$45.44</span>
+                        <span class="add-to-cart-btn btn">Add to Cart</span>
                     </div>
 
-                    <div class="product">
-                        <div><img src="./Assset/images/shop4.jpg"
-                                alt="J & W Blue Cocktail Wine"></div>
-                        <h4>J & W Blue Cocktail Wine</h4>
-                        <div class="cart">
-                            <div>
-                                <p><del>$30.00</del> <span>$25.00</span></p>
-                            </div>
-                            <a href="#" class="btn cart-btn">
-                                <div class="cart-button">
+                </div>
 
-                                    <p>Add Cart</p>
-                                    <img src="./Assset/images/pngegg.png" class="cart-img">
-                                </div>
-                            </a>
-                        </div>
-
+                <div class="card-item" data-id="5">
+                    <img src="./Assset/images/shop5.jpg" alt="">
+                    <div class="details">
+                        <h3>J & W Cocktail Tarbaru</h3>
+                        <p>
+                            <span>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</span>
+                        </p>
+                        <span class="price"><del>$70.00</del>$63.44</span>
+                        <span class="add-to-cart-btn btn">Add to Cart</span>
                     </div>
 
-                    <div class="product">
-                        <div><img src="./Assset/images/shop5.jpg" alt="J & W Cocktail Tarbaru"></div>
-                        <h4>J & W Cocktail Tarbaru</h4>
-                        <div class="cart">
-                            <div>
-                                <p><del>$30.00</del> <span>$25.00</span></p>
-                            </div>
-                            <a href="#" class="btn cart-btn">
-                                <div class="cart-button">
+                </div>
 
-                                    <p>Add Cart</p>
-                                    <img src="./Assset/images/pngegg.png" class="cart-img">
-                                </div>
-                            </a>
-                        </div>
+                <div class="card-item" data-id="6">
+                    <img src="./Assset/images/shop6.jpg" alt="">
+                    <div class="details">
+                        <h3>Fleur De Provence</h3>
+                        <p>
+                            <span>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</span>
+                        </p>
+                        <span class="price"><del>$130.00</del>$100.44</span>
+                        <span class="add-to-cart-btn btn">Add to Cart</span>
                     </div>
                 </div>
+
                 <a href="./product-page.html" class="btn veiw"> VEIW ALL BELLOW</a>
             </div>
 
@@ -326,40 +325,33 @@
                             <img src="./Assset/images/wpsbu-img3.webp" alt="">
                             <h5>Felix Yul</h5>
                             <p>“What keeps me coming back is how clearly everything is explained. The tasting guides,
-                                pairing suggestions, and educational articles help me understand wine on a deeper level.
-                                Even complicated terms or processes suddenly make sense, and that has completely changed
-                                how I taste and enjoy each bottle.”</p>
+                                pairing suggestions, and educational articles help me understand wine on a deeper
+                                level.”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img4.webp" alt="">
                             <h5>Samuel Stella</h5>
                             <p>“I love the personal touch Vintner’s Corner brings. The stories about winemakers,
-                                vineyards, and traditions make every wine feel alive. It’s not just about what to drink;
-                                it’s about appreciating the people and craftsmanship behind every bottle, and that adds
-                                so much meaning to the experience.”</p>
+                                vineyards, and traditions make every wine feel alive.”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img5.webp" alt="">
                             <h5>Augustine Victor</h5>
                             <p>“Whenever I’m stuck trying to pick a wine for a dinner or event, Vintner’s Corner is the
-                                first place I check. The recommendations always feel thoughtful and accurate, and I
-                                appreciate how the site suggests wines based on mood, food, and occasion. It has saved
-                                me so many times.”</p>
+                                first place I check.”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img6.webp" alt="">
                             <h5>Daniel Wisdom</h5>
                             <p>“The design and layout are incredibly user-friendly. I can browse casually or dive deep
-                                into articles without feeling lost. It’s rare to find a wine site that balances
-                                simplicity with depth, but Vintner’s Corner does it effortlessly.”</p>
+                                into articles without feeling lost.”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img7.webp" alt="">
                             <h5>Uche John</h5>
                             <p>“What stands out most to me is how approachable the content is. Wine can feel
-                                complicated, but Vintner’s Corner manages to make learning enjoyable and even exciting.
-                                Each visit feels like a new discovery, and it has genuinely helped me grow my confidence
-                                in choosing and enjoying wine.”</p>
+                                complicated, but Vintner’s Corner manages to make learning enjoyable and even exciting.”
+                            </p>
                         </div>
                     </div>
                     <div aria-hidden class="group">
@@ -367,48 +359,39 @@
                             <img src="./Assset/images/wpsbu-img2.webp" alt="">
                             <h5>John Jude</h5>
                             <p>“Vintner’s Corner has become my go-to space whenever I want to learn something new about
-                                wine. It’s warm, inviting, and easy to navigate, and it always feels like the site is
-                                speaking directly to both beginners and seasoned wine lovers. I never feel lost or
-                                overwhelmed—just excited to explore.”</p>
+                                wine. ”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img3.webp" alt="">
                             <h5>Felix Yul</h5>
                             <p>“What keeps me coming back is how clearly everything is explained. The tasting guides,
                                 pairing suggestions, and educational articles help me understand wine on a deeper level.
-                                Even complicated terms or processes suddenly make sense, and that has completely changed
-                                how I taste and enjoy each bottle.”</p>
+                                ”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img4.webp" alt="">
                             <h5>Samuel Stella</h5>
                             <p>“I love the personal touch Vintner’s Corner brings. The stories about winemakers,
-                                vineyards, and traditions make every wine feel alive. It’s not just about what to drink;
-                                it’s about appreciating the people and craftsmanship behind every bottle, and that adds
-                                so much meaning to the experience.”</p>
+                                vineyards, and traditions make every wine feel alive.”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img5.webp" alt="">
                             <h5>Augustine Victor</h5>
                             <p>“Whenever I’m stuck trying to pick a wine for a dinner or event, Vintner’s Corner is the
-                                first place I check. The recommendations always feel thoughtful and accurate, and I
-                                appreciate how the site suggests wines based on mood, food, and occasion. It has saved
-                                me so many times.”</p>
+                                first place I check.”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img6.webp" alt="">
                             <h5>Daniel Wisdom</h5>
                             <p>“The design and layout are incredibly user-friendly. I can browse casually or dive deep
-                                into articles without feeling lost. It’s rare to find a wine site that balances
-                                simplicity with depth, but Vintner’s Corner does it effortlessly.”</p>
+                                into articles without feeling lost.”</p>
                         </div>
                         <div class="card">
                             <img src="./Assset/images/wpsbu-img7.webp" alt="">
                             <h5>Uche John</h5>
                             <p>“What stands out most to me is how approachable the content is. Wine can feel
-                                complicated, but Vintner’s Corner manages to make learning enjoyable and even exciting.
-                                Each visit feels like a new discovery, and it has genuinely helped me grow my confidence
-                                in choosing and enjoying wine.”</p>
+                                complicated, but Vintner’s Corner manages to make learning enjoyable and even exciting.”
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -501,6 +484,7 @@
         });
     </script>
 
+    <script src="./javascript/product.js"></script>
 
 </body>
 

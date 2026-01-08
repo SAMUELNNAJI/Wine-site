@@ -15,7 +15,7 @@
 
 .color-scroll {
     animation: color-scroll 5s ease backwards;
-     animation-timeline: view(50% 0%);
+    animation-timeline: view(50% 0%);
 }
 
 @keyframes color-scroll {
@@ -25,13 +25,13 @@
     }
 
     50% {
-         background-color: #511502;
+        background-color: #511502;
         transform: translateX(100%);
     }
 
-    100%{
-         background-color: #511502;
-        transform: translateX(0%); 
+    100% {
+        background-color: #511502;
+        transform: translateX(0%);
     }
 }
 
@@ -82,7 +82,7 @@ body {
 
 
 header {
-    position: absolute;
+    position: fixed;
     top: 20px;
     width: 100vw;
     display: flex;
@@ -109,7 +109,7 @@ header {
         border-radius: 18px;
         backdrop-filter: blur(10px);
         box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
-         margin-left: 192px;
+        margin-left: 192px;
     }
 
     ul {
@@ -124,11 +124,11 @@ header {
     }
 
     li a {
-          text-decoration: none;
+        text-decoration: none;
         color: rgb(255, 255, 255);
         font-weight: 700;
         font-size: 16px;
-        
+
 
     }
 
@@ -136,7 +136,7 @@ header {
         color: #D63E0D;
     }
 
-     .sign-up img{
+    .sign-up img {
         width: 20px;
         height: 20px;
         transform: translateY(5px);
@@ -167,7 +167,7 @@ header {
     background-color: #D63E0D;
     color: #fcece6;
     padding: 9px 80px;
-     border-radius: 18px;
+    border-radius: 18px;
     box-shadow: 2px 2px 0px 1px rgba(74, 74, 74, 0.525);
 }
 
@@ -176,15 +176,15 @@ svg {
 
 }
 
-.hero-section::before{
+.hero-section::before {
     content: '';
     position: absolute;
     inset: 0;
-     background: linear-gradient(45deg,#511402a0,#d63f0dc3,#511402cb);
-     opacity: 0.5;
-      width: 100%;
+    background: linear-gradient(45deg, #511402a0, #d63f0dc3, #511402cb);
+    opacity: 0.5;
+    width: 100%;
     height: 60vh;
-    
+
 }
 
 
@@ -204,7 +204,7 @@ svg {
         text-align: center;
         padding-top: 100px;
         text-shadow: 2px 2px 4px #000000b3;
-         position: relative;
+        position: relative;
         z-index: 12;
     }
 
@@ -219,7 +219,7 @@ svg {
         display: block;
         margin: auto;
         padding: 20px;
-         position: relative;
+        position: relative;
         z-index: 12;
     }
 }
@@ -232,17 +232,17 @@ hr {
 }
 
 
-.sign-in{
+.sign-in {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
     padding: 20px;
-   
-    
-    
 
-    .sign-in-container{
+
+
+
+    .sign-in-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -250,11 +250,11 @@ hr {
         gap: 20px;
         margin: 20px;
         border-radius: 12px;
-          flex-direction: row-reverse;
+        flex-direction: row-reverse;
 
     }
 
-    .wine{
+    .wine {
         background-color: #D63E0D;
         height: 500px;
         padding: 20px;
@@ -263,7 +263,7 @@ hr {
         background: url(../Assset/images/blog-img7.webp);
         display: none;
 
-           button{
+        button {
             padding: 10px 25px;
             font-weight: 500;
             background-color: transparent;
@@ -275,47 +275,48 @@ hr {
             transform: translateX(100%);
         }
 
-          h2{
+        h2 {
             color: #fcece6;
             text-align: center;
-            font-size: clamp(20px,6vw,34px);
+            font-size: clamp(20px, 6vw, 34px);
         }
 
-        p{
+        p {
             max-width: 300px;
             font-weight: 500;
             color: #fefcfc;
             text-align: center;
         }
-        .content{
+
+        .content {
             position: relative;
             top: 160px;
         }
-    } 
+    }
 
-        .wine::before{
-            content: '';
-            position: absolute;
-            inset: 0;
-           border-radius: 12px 0px 0px 12px;
-            background: linear-gradient(45deg,#511402a0,#d63f0dc3,#511402cb);
-        }
-        
-      
-        
-      
-    
+    .wine::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 12px 0px 0px 12px;
+        background: linear-gradient(45deg, #511402a0, #d63f0dc3, #511402cb);
+    }
 
-    .form{
-       height: 500px;
-        padding: 50px;  
 
-        h1{
-            text-align:initial;
+
+
+
+
+    .form {
+        height: 500px;
+        padding: 50px;
+
+        h1 {
+            text-align: initial;
             color: #D63E0D;
         }
 
-        input{
+        input {
             width: 300px;
             height: 40px;
             padding: 20px;
@@ -324,32 +325,33 @@ hr {
             border: 1.5px solid black;
         }
 
-        .check{
+        .check {
             display: flex;
             align-items: center;
         }
-        #check{
+
+        #check {
             width: 30px;
             height: 20px;
         }
 
-        button{
+        button {
             padding: 14px 124px;
             border-radius: 8px;
             margin-bottom: 10px;
         }
 
-        a{
+        a {
             text-decoration: none;
             font-weight: 500;
             color: #992701;
         }
 
-        p{
+        p {
             font-weight: 500;
         }
 
-        span{
+        span {
             margin-top: -100px;
         }
     }
@@ -401,11 +403,11 @@ footer {
     }
 
     h4 {
-      color:#fcece6;
+        color: #fcece6;
         font-size: 1.3rem;
     }
 
-  .logo img {
+    .logo img {
         width: 300px;
         margin-left: -13px;
     }
@@ -442,7 +444,7 @@ footer {
     position: relative;
     left: 85vw;
     width: 40px;
-     filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
+    filter: invert(32%) sepia(88%) saturate(6667%) hue-rotate(6deg) brightness(95%) contrast(100%);
 }
 
 
@@ -476,7 +478,7 @@ footer {
         display: none;
     }
 
-     header {
+    header {
         .logo img {
             width: 200px;
             margin-inline: 40.5px;
@@ -484,8 +486,8 @@ footer {
 
     }
 
-   
-      footer {
+
+    footer {
         .footer-container {
             padding-inline: 83px;
         }
@@ -500,16 +502,16 @@ footer {
 
     }
 
-      .back-to-top img {
+    .back-to-top img {
         position: relative;
         left: 94vw;
         width: 40px;
     }
 
-    .sign-in{
-   
-    .wine{
-        display: flex;
-    } 
-}
+    .sign-in {
+
+        .wine {
+            display: flex;
+        }
+    }
 }
