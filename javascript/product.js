@@ -247,3 +247,5 @@ function updateCartUI() {
 
 document.addEventListener('DOMContentLoaded', () => { updateCartUI() })
 
+
+

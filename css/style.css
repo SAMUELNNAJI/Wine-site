@@ -918,6 +918,10 @@ footer {
     .cart-icon {
         left: -80px;
     }
+
+    svg {
+        left: -12px;
+    }
 }
 
 @media (min-width:100px) and (max-width:328px) {
