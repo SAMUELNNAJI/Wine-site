@@ -188,10 +188,8 @@ header {
 
 svg {
     fill: #D63E0D;
-    /* display: none; */
     position: relative;
     z-index: 99;
-    left: -20px;
 }
 
 
@@ -494,7 +492,7 @@ h2 {
         justify-content: center;
         align-items: center;
         width: 100%;
-        gap: 8%;
+        gap: 7%;
     }
 
     .card-item:hover {
@@ -512,7 +510,7 @@ h2 {
     .card-item {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 310px;
         height: 400px;
         justify-content: center;
         align-items: center;
@@ -534,7 +532,6 @@ h2 {
         text-align: center;
         width: 100%;
         padding-inline: 30px;
-
     }
 
     .card-item p {
@@ -548,7 +545,6 @@ h2 {
     }
 
     .card-item span {
-        /* display: block; */
         margin-top: 20px;
         width: 100%;
         font-weight: 500;

@@ -186,8 +186,8 @@ svg {
     fill: #D63E0D;
     position: relative;
     z-index: 99;
-    left: -20px;
 }
+
 
 /* target nav link */
 nav a[href*="product"] {
@@ -694,12 +694,13 @@ footer {
 
 
 @media (min-width:768px) and (max-width: 1024px) {
+
     .cart-icon {
         left: -10px;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .cart-icon {
         left: -80px;
     }
