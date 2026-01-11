@@ -197,6 +197,8 @@ header {
     .logo img {
         width: 200px;
         margin-left: 15px;
+        position: relative;
+        z-index: 999;
     }
 
 
@@ -261,7 +263,7 @@ header {
     justify-content: flex-start;
     gap: 50px;
     padding-top: 30px;
-    z-index: 99999999999;
+    z-index: 999999999999;
 }
 
 .MobileMenu a:hover:not(.btn, .svg) {
