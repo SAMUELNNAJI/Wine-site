@@ -9,6 +9,20 @@
 </head>
 
 <body>
+
+    <div class="loading-wrapper">
+        <div class="logo-wrapper">
+            <img src="./Assset/icons/logo.png" alt="" style="width: 20rem;">
+        </div>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
     <header>
         <div>
             <a href="./index.html" class="logo"><img src="./Assset/icons/logo.png" alt=""></a>
@@ -27,7 +41,8 @@
                 <li><a href="./product-page.html">Product</a></li>
                 <li><a href="./Contact-Us.html">Contact</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                 <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img src="./Assset/icons/signup-icon.png" alt=""></a></li>
+                <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
+                            src="./Assset/icons/signup-icon.png" alt=""></a></li>
             </ul>
 
         </div>
@@ -39,7 +54,8 @@
                 <li><a href="./product-page.html">Product</a></li>
                 <li><a href="./Contact-Us.html">Contact</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                 <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img src="./Assset/icons/signup-icon.png" alt=""></a></li>
+                <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
+                            src="./Assset/icons/signup-icon.png" alt=""></a></li>
             </ul>
         </nav>
         <div class="mobile-hanburger">
@@ -57,7 +73,7 @@
     <main>
         <section class="hero-section">
             <h2>Contact-Us</h2>
-         
+
             <p>Have a question or need a little guidance? We’re here to help.
                 Send us a message and our team at Vintner’s Corner will get back to you as soon as possible. Cheers!</p>
         </section>
@@ -65,7 +81,7 @@
             <div class="Contact-container">
                 <div class="contact">
                     <h3>Cheers to great wine and great conversation</h3>
-                       <hr class="color-scroll">
+                    <hr class="color-scroll">
                     <p>Reach out and let us help you find your perfect pour</p>
 
                     <label for="Name">
@@ -153,7 +169,7 @@
                 </ul>
             </div>
 
-         <div class="Contact">
+            <div class="Contact">
                 <div class="contact-us">
                     <div><img src="./Assset/icons/Email-removebg-preview.png" alt=""></div>
                     <div>
@@ -186,8 +202,8 @@
             MobileMenu.style.display = 'none';
         }
 
-         // back to top here
-         const backToTop = document.querySelector('.back-to-top');
+        // back to top here
+        const backToTop = document.querySelector('.back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTop.style.display = 'block';
@@ -196,6 +212,7 @@
             }
         });
     </script>
+    <script src="./javascript/loading.js"></script>
 </body>
 
 </html>

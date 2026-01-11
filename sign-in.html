@@ -13,6 +13,19 @@
 </head>
 
 <body>
+    <div class="loading-wrapper">
+        <div class="logo-wrapper">
+            <img src="./Assset/icons/logo.png" alt="" style="width: 20rem;">
+        </div>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
     <header>
         <div>
             <a href="./index.html" class="logo"><img src="./Assset/icons/logo.png" alt=""></a>
@@ -31,8 +44,8 @@
                 <li><a href="./product-page.html">Product</a></li>
                 <li><a href="./Contact-Us.html">Contact</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                <li class="sign-up"><a href="./sign-in.htm#sign-inl" class="btn">Sign Up <img src="./Assset/icons/signup-icon.png"
-                            alt=""></a></li>
+                <li class="sign-up"><a href="./sign-in.htm#sign-inl" class="btn">Sign Up <img
+                            src="./Assset/icons/signup-icon.png" alt=""></a></li>
 
             </ul>
 
@@ -45,8 +58,8 @@
                 <li><a href="./product-page.html">Product</a></li>
                 <li><a href="./Contact-Us.html">Contact</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img src="./Assset/icons/signup-icon.png"
-                            alt=""></a></li>
+                <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
+                            src="./Assset/icons/signup-icon.png" alt=""></a></li>
             </ul>
         </nav>
         <div class="mobile-hanburger">
@@ -101,8 +114,9 @@
                         <a href="#"><button class="btn">SIGN IN</button></a>
                         <br>
                         <a href="#">Forgot your password?</a>
-                        <p>Dont have an account? 
-                            <a href="./sign-up.html#target">Sign Up</a></p>
+                        <p>Dont have an account?
+                            <a href="./sign-up.html#target">Sign Up</a>
+                        </p>
                     </div>
                 </div>
                 <div class="wine">
@@ -169,7 +183,7 @@
         </div>
     </footer>
 
-   <div class="back-to-top">
+    <div class="back-to-top">
         <a href="#"><img src="./Assset/icons/up-arrow.png" alt=""></a>
     </div>
     <script src="script.js"></script>
@@ -184,8 +198,8 @@
             MobileMenu.style.display = 'none';
         }
 
-         // back to top here
-         const backToTop = document.querySelector('.back-to-top');
+        // back to top here
+        const backToTop = document.querySelector('.back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTop.style.display = 'block';
@@ -195,6 +209,7 @@
         });
 
     </script>
+    <script src="./javascript/loading.js"></script>
 </body>
 
 </html>

@@ -10,9 +10,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/About.css">
+
+
 </head>
 
 <body>
+   <div class="loading-wrapper">
+        <div class="logo-wrapper">
+            <img src="./Assset/icons/logo.png" alt="" style="width: 20rem;">
+        </div>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
     <header>
         <div>
             <a href="./index.html" class="logo"><img src="./Assset/icons/logo.png" alt=""></a>
@@ -63,7 +78,7 @@
     </header>
     <main>
         <section class="hero-section">
-            <h2>About-Us</h2>
+            <h2 class="animate__zoomInRight">About-Us</h2>
 
             <p>At Vintner’s Corner, we’re passionate about making the world of wine easier to explore and enjoy. Our
                 goal is to connect you with trusted insights, and the stories behind the bottles you love.</p>
@@ -666,7 +681,7 @@
             }
         });
     </script>
-
+    <script src="./javascript/loading.js"></script>
 
 </body>
 
