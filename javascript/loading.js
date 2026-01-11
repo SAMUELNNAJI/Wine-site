@@ -6,5 +6,5 @@ window.addEventListener('load', function () {
         setTimeout(() => {
             loadingWrapper.style.display = 'none';
         }, 800);
-    }, 1500);
+    });
 });
