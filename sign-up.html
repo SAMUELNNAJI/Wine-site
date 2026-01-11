@@ -15,203 +15,201 @@
 <body>
 
     <div class="loading-wrapper">
+        <div class="logo-wrapper">
+            <img src="./Assset/icons/logo.png" alt="" style="width: 20rem;">
+        </div>
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
 
-        <div class="loading-wrapper">
-            <div class="logo-wrapper">
-                <img src="./Assset/icons/logo.png" alt="" style="width: 20rem;">
-            </div>
-            <div class="spinner">
-                <div class="rect1"></div>
-                <div class="rect2"></div>
-                <div class="rect3"></div>
-                <div class="rect4"></div>
-                <div class="rect5"></div>
-            </div>
+    <header>
+        <div>
+            <a href="./index.html" class="logo"><img src="./Assset/icons/logo.png" alt=""></a>
         </div>
 
-        <header>
-            <div>
-                <a href="./index.html" class="logo"><img src="./Assset/icons/logo.png" alt=""></a>
+        <div class="mobile">
+
+            <ul class="MobileMenu">
+                <li ondblclick=hideMobileMenu()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./product-page.html">Product</a></li>
+                <li><a href="./Contact-Us.html">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
+                            src="./Assset/icons/signup-icon.png" alt=""></a></li>
+
+            </ul>
+
+        </div>
+
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./product-page.html">Product</a></li>
+                <li><a href="./Contact-Us.html">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
+                            src="./Assset/icons/signup-icon.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-hanburger">
+            <li onclick=showMobileMenu()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="40px"
+                        viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+
+        </div>
+
+        <div>
+            <!-- <i class="fa-solid fa-basket-shopping" color="white"></i> -->
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Welcome to Vintner's Corner</h2>
+                <p>At Vintner's Corner, we're passionate about making the world of wine easier to explore and enjoy.
+                    Our
+                    goal is to connect you with trusted insights, and the stories behind the bottles you love.</p>
+            </div>
+        </section>
+
+
+        <section class="sign-in" id="target">
+            <div class="sign-in-container">
+                <div class="form">
+                    <h1>Creat Account</h1>
+                    <p>Sign up to begin your wine journey</p>
+                    <div>
+                        <label for="Username">
+                            <input type="email" name="" id="Username" placeholder="Username">
+                        </label>
+                        <br>
+                        <label for="Email">
+                            <input type="email" name="" id="Email" placeholder="Email Address">
+                        </label>
+                        <br>
+                        <label for="Password">
+                            <input type="password" name="" id="Password" placeholder="Password">
+                        </label>
+                        <br>
+                        <div class="check">
+                            <div>
+                                <label for="check">
+                                    <input type="checkbox" name="" id="check">
+                                </label>
+                            </div>
+                            <div><span>Remember me </span>
+                            </div>
+                        </div>
+
+                        <button class="btn">SIGN UP</button>
+                        <br>
+                        <p>Already have an account? <a href="./sign-in.html#sign-in">Sign In</a></p>
+                    </div>
+                </div>
+                <div class="wine">
+                    <div class="content">
+                        <h2>Hello, Wine Lover!</h2>
+                        <p>Discover curated selections and expert insights from our wine experts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <div>
+                    <a href="#" class="logo"><img src="./Assset/icons/20251127_160001.png" alt=""></a>
+                </div>
+                <p>Welcome to Vintner’s Corner, your cozy spot on our wine website. Here, you will discover quick
+                    insights, helpful tasting tips.</p>
             </div>
 
-            <div class="mobile">
-
-                <ul class="MobileMenu">
-                    <li ondblclick=hideMobileMenu()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                viewBox="0 -960 960 960" width="24px" fill="#000">
-                                <path
-                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                            </svg></a></li>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./About.html">About</a></li>
-                    <li><a href="./product-page.html">Product</a></li>
-                    <li><a href="./Contact-Us.html">Contact</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
-                                src="./Assset/icons/signup-icon.png" alt=""></a></li>
-
-                </ul>
-
-            </div>
-
-            <nav class="desktop-menu">
+            <div class="Quick-Links">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./About.html">About</a></li>
                     <li><a href="./product-page.html">Product</a></li>
                     <li><a href="./Contact-Us.html">Contact</a></li>
                     <li><a href="./blog.html">Blog</a></li>
-                    <li class="sign-up"><a href="./sign-in.html#sign-in" class="btn">Sign Up <img
-                                src="./Assset/icons/signup-icon.png" alt=""></a></li>
+
                 </ul>
-            </nav>
-            <div class="mobile-hanburger">
-                <li onclick=showMobileMenu()><a href="#"><svg class="svg" xmlns="http://www.w3.org/2000/svg"
-                            height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg></a></li>
-
             </div>
 
-            <div>
-                <!-- <i class="fa-solid fa-basket-shopping" color="white"></i> -->
-            </div>
-        </header>
-
-
-        <main>
-
-            <section class="hero-section">
-                <div class="hero-content">
-                    <h2>Welcome to Vintner's Corner</h2>
-                    <p>At Vintner's Corner, we're passionate about making the world of wine easier to explore and enjoy.
-                        Our
-                        goal is to connect you with trusted insights, and the stories behind the bottles you love.</p>
-                </div>
-            </section>
-
-
-            <section class="sign-in" id="target">
-                <div class="sign-in-container">
-                    <div class="form">
-                        <h1>Creat Account</h1>
-                        <p>Sign up to begin your wine journey</p>
-                        <div>
-                            <label for="Username">
-                                <input type="email" name="" id="Username" placeholder="Username">
-                            </label>
-                            <br>
-                            <label for="Email">
-                                <input type="email" name="" id="Email" placeholder="Email Address">
-                            </label>
-                            <br>
-                            <label for="Password">
-                                <input type="password" name="" id="Password" placeholder="Password">
-                            </label>
-                            <br>
-                            <div class="check">
-                                <div>
-                                    <label for="check">
-                                        <input type="checkbox" name="" id="check">
-                                    </label>
-                                </div>
-                                <div><span>Remember me </span>
-                                </div>
-                            </div>
-
-                            <button class="btn">SIGN UP</button>
-                            <br>
-                            <p>Already have an account? <a href="./sign-in.html#sign-in">Sign In</a></p>
-                        </div>
-                    </div>
-                    <div class="wine">
-                        <div class="content">
-                            <h2>Hello, Wine Lover!</h2>
-                            <p>Discover curated selections and expert insights from our wine experts</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-
-
-
-
-
-
-
-
-
-        <footer>
-            <div class="footer-container">
-                <div class="logo">
+            <div class="Contact">
+                <div class="contact-us">
+                    <div><img src="./Assset/icons/Email-removebg-preview.png" alt=""></div>
                     <div>
-                        <a href="#" class="logo"><img src="./Assset/icons/20251127_160001.png" alt=""></a>
-                    </div>
-                    <p>Welcome to Vintner’s Corner, your cozy spot on our wine website. Here, you will discover quick
-                        insights, helpful tasting tips.</p>
-                </div>
-
-                <div class="Quick-Links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./About.html">About</a></li>
-                        <li><a href="./product-page.html">Product</a></li>
-                        <li><a href="./Contact-Us.html">Contact</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-
-                    </ul>
-                </div>
-
-                <div class="Contact">
-                    <div class="contact-us">
-                        <div><img src="./Assset/icons/Email-removebg-preview.png" alt=""></div>
-                        <div>
-                            <p>Support@Vintner’scorner.com</p>
-                        </div>
-
+                        <p>Support@Vintner’scorner.com</p>
                     </div>
 
-                    <div class="contact-us">
-                        <div>
-                            <img src="./Assset/icons/phone.png" alt="">
-                        </div>
-                        <div>
-                            <p>+234 700 000 000</p>
-                        </div>
+                </div>
+
+                <div class="contact-us">
+                    <div>
+                        <img src="./Assset/icons/phone.png" alt="">
+                    </div>
+                    <div>
+                        <p>+234 700 000 000</p>
                     </div>
                 </div>
             </div>
-        </footer>
-
-        <div class="back-to-top">
-            <a href="#"><img src="./Assset/icons/up-arrow.png" alt=""></a>
         </div>
-        <script src="script.js"></script>
+    </footer>
 
-        <script>
-            function showMobileMenu() {
-                const MobileMenu = document.querySelector('.MobileMenu');
-                MobileMenu.style.display = 'flex';
-            }
-            function hideMobileMenu() {
-                const MobileMenu = document.querySelector('.MobileMenu');
-                MobileMenu.style.display = 'none';
-            }
+    <div class="back-to-top">
+        <a href="#"><img src="./Assset/icons/up-arrow.png" alt=""></a>
+    </div>
+    <script src="script.js"></script>
 
-            // back to top here
-            const backToTop = document.querySelector('.back-to-top');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    backToTop.style.display = 'block';
-                } else {
-                    backToTop.style.display = 'none';
-                }
-            });
-        </script>
-        <script src="./javascript/loading.js"></script>
+    <script>
+        function showMobileMenu() {
+            const MobileMenu = document.querySelector('.MobileMenu');
+            MobileMenu.style.display = 'flex';
+        }
+        function hideMobileMenu() {
+            const MobileMenu = document.querySelector('.MobileMenu');
+            MobileMenu.style.display = 'none';
+        }
+
+        // back to top here
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="./javascript/loading.js"></script>
 </body>
 
 </html>
