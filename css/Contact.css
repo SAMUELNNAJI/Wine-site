@@ -551,7 +551,11 @@ footer {
 
 
 .flipInX {
+<<<<<<< HEAD
     animation: flipInX 3s ease-in;
+=======
+    animation: flipInX 2s ease-in;
+>>>>>>> 6b602a658c6f037f683d8aca2350bd3183c38b96
 }
 
 @keyframes flipInX {
