@@ -604,3 +604,25 @@ footer {
         }
     }
 }
+
+
+.flipInX {
+    animation: flipInX 2s ease-in;
+}
+
+@keyframes flipInX {
+    10% {
+        opacity: 0.2;
+        transform: translateY(50%);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: translateY(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
