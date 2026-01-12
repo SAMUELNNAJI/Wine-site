@@ -566,24 +566,8 @@ footer {
 }
 
 /* Animations */
-.zoom {
-    animation: zoom 2s linear;
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0.5);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-
-
 .flipInX {
-    animation: flipInX 2s ease-in;
+    animation: flipInX 2s linear;
 }
 
 @keyframes flipInX {

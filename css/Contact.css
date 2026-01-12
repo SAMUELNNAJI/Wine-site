@@ -551,7 +551,7 @@ footer {
 
 
 .flipInX {
-    animation: flipInX 3s ease-in;
+    animation: flipInX 2s linear;
 }
 
 @keyframes flipInX {
