@@ -1,7 +1,4 @@
 window.addEventListener('load', function () {
-    // Trigger flipInX animation
-    document.getElementById("Animate").classList.add('flipInX');
-    
     setTimeout(function () {
         const loadingWrapper = document.querySelector('.loading-wrapper');
         loadingWrapper.style.opacity = '0';
