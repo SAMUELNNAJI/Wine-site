@@ -77,11 +77,13 @@ let responsiveSlider = function () {
     slideList.style.left = "-" + count * sliderWidth + "px";
   };
 
-  next.addEventListener("click", function () {
+  next.addEventListener("click", function (e) {
+    e.preventDefault();
     nextSlide();
   });
 
-  prev.addEventListener("click", function () {
+  prev.addEventListener("click", function (e) {
+    e.preventDefault();
     prevSlide();
   });
 
@@ -90,9 +92,9 @@ let responsiveSlider = function () {
   }, 8000);
 }
 
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
   responsiveSlider();
-}
+})
 
 
 
