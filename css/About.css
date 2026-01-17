@@ -158,7 +158,7 @@ nav a[href*="About"] {
     font-weight: 600;
     border-radius: 18px;
     color: #fdf6ea;
-    box-shadow: #00000050 2px 2px 2px 0px;
+    box-shadow: #00000050 2px 2px 2px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -169,7 +169,7 @@ nav a[href*="About"] {
     font-weight: 600;
     border-radius: 18px;
     color: #fdf6ea;
-    box-shadow: #00000050 2px 2px 2px 0px;
+    box-shadow: #00000050 2px 2px 2px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.7s ease;
 }
@@ -218,7 +218,7 @@ header {
         padding: 15px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
-        box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
+        box-shadow: 2px 2px 2px 0 rgba(18, 17, 17, 0.386);
         margin-left: 192px;
     }
 
@@ -257,7 +257,7 @@ header {
 .mobile .MobileMenu {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     background-color: #475b6459;
     display: none;
     flex-direction: column;
@@ -277,7 +277,7 @@ header {
     color: #fcece6;
     padding: 9px 80px;
     border-radius: 18px;
-    box-shadow: 2px 2px 0px 1px rgba(74, 74, 74, 0.525);
+    box-shadow: 2px 2px 0 1px rgba(74, 74, 74, 0.525);
 }
 
 svg {
@@ -453,7 +453,7 @@ hr {
     }
 
     .card-back span {
-        font-weight: 700px;
+        font-weight: 700;
         font-size: 1.2rem;
         color: #ffffff;
     }
@@ -746,7 +746,7 @@ footer {
     }
 
     .example-1 .icon-content .link:hover {
-        box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+        box-shadow: 3px 2px 45px 0 rgb(0 0 0 / 12%);
     }
 
     .example-1 .icon-content .link svg {
@@ -865,7 +865,7 @@ footer {
         gap: 40px;
 
         .details {
-            margin-left: 0px;
+            margin-left: 0;
         }
     }
 

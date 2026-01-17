@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="fonts">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Assset/fonts/gulams-condensed-ext-bd-font.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Assset/fonts/normiyola-font.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

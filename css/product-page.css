@@ -140,7 +140,7 @@
     font-weight: 600;
     border-radius: 18px;
     color: #fdf6ea;
-    box-shadow: #00000050 2px 2px 2px 0px;
+    box-shadow: #00000050 2px 2px 2px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
 }
@@ -152,7 +152,7 @@
     font-weight: 600;
     border-radius: 18px;
     color: #fdf6ea;
-    box-shadow: #00000050 2px 2px 2px 0px;
+    box-shadow: #00000050 2px 2px 2px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.7s ease;
 }
@@ -203,7 +203,7 @@ header {
         padding: 15px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
-        box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
+        box-shadow: 2px 2px 2px 0 rgba(18, 17, 17, 0.386);
         margin-left: -22px;
         z-index: 999999999;
     }
@@ -244,7 +244,7 @@ header {
 .mobile .MobileMenu {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     background-color: #475b6459;
     display: none;
     flex-direction: column;
@@ -265,7 +265,7 @@ header {
     color: #fcece6;
     padding: 9px 80px;
     border-radius: 18px;
-    box-shadow: 2px 2px 0px 1px rgba(74, 74, 74, 0.525);
+    box-shadow: 2px 2px 0 1px rgba(74, 74, 74, 0.525);
 }
 
 svg {
@@ -655,7 +655,7 @@ span {
     margin: 20px 0;
     border-radius: 14px;
     background-color: #ffffff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0;
     transition: transform 2s ease;
 }
 
@@ -884,5 +884,66 @@ footer {
     100% {
         opacity: 1;
         transform: translateY(0%);
+    }
+}
+
+/* Cart Notification Toast */
+.cart-notification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #511502 0%, #D63E0D 100%);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    min-width: 300px;
+    animation: slideIn 0.3s ease-out;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 0.3s ease;
+}
+
+.cart-notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notification-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.notification-content strong {
+    color: #fffdfd;
+    font-weight: 600;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Mobile notification styles */
+@media (max-width: 768px) {
+    .cart-notification {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        min-width: auto;
     }
 }

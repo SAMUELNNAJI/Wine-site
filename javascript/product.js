@@ -1,27 +1,27 @@
-var responsiveSlider = function () {
+let responsiveSlider = function () {
 
-  var slider = document.getElementById("slider");
-  var sliderWidth = slider.offsetWidth;
-  var slideList = document.getElementById("sliderWrap");
-  var items = slideList.querySelectorAll("li").length;
+  let slider = document.getElementById("slider");
+  let sliderWidth = slider.offsetWidth;
+  let slideList = document.getElementById("sliderWrap");
+  let items = slideList.querySelectorAll("li").length;
 
-  var count = 0;
+  let count = 0;
 
-  var num = document.getElementById("num");
+  let num = document.getElementById("num");
   slideNums = num.querySelectorAll("div");
 
-  var prev = document.getElementById("prev");
-  var next = document.getElementById("next");
+  let prev = document.getElementById("prev");
+  let next = document.getElementById("next");
 
-  var addColor = function (pos) {
+  const addColor = function (pos) {
     slideNums[pos].style.boxShadow = "0 0 10px 2px rgb(196, 253, 255)";
     slideNums[pos].style.background = "#fff";
-  }
+  };
 
-  var removeColor = function (pos) {
+  let removeColor = function (pos) {
     slideNums[pos].style.boxShadow = "0 0 10px 2px transparent";
     slideNums[pos].style.background = "rgba(255, 255, 255, .3)";
-  }
+  };
 
   addColor(0);
 
@@ -61,21 +61,21 @@ var responsiveSlider = function () {
     slideList.style.left = "-" + count * sliderWidth + "px";
   });
 
-  var prevSlide = function () {
+  let prevSlide = function () {
     removeColor(count);
     if (!count) count = items - 1;
     else count--;
     addColor(count);
     slideList.style.left = "-" + count * sliderWidth + "px";
-  }
+  };
 
-  var nextSlide = function () {
+  let nextSlide = function () {
     removeColor(count);
     if (count == items - 1) count = 0;
     else count++;
     addColor(count);
     slideList.style.left = "-" + count * sliderWidth + "px";
-  }
+  };
 
   next.addEventListener("click", function () {
     nextSlide();
@@ -174,7 +174,42 @@ function addItemFunction(e) {
   price = price.replace("$", '').trim()
   const item = new CartItem(name, desc, img, price)
   LocalCart.addItemToLocalCart(id, item)
+  
+  // Get the updated quantity from cart
+  const cartItems = LocalCart.getLocalCartItems()
+  const quantity = cartItems.get(id).quantity
+  
+  // Show notification
+  showNotification(name, quantity)
   console.log(price)
+}
+
+function showNotification(productName, quantity) {
+  // Create notification element
+  const notification = document.createElement('div')
+  notification.classList.add('cart-notification')
+  notification.innerHTML = `
+    <div class="notification-content">
+      <p><strong>${productName}</strong> added to cart</p>
+      <p>Quantity: <strong>${quantity}</strong></p>
+    </div>
+  `
+  
+  // Add to page
+  document.body.appendChild(notification)
+  
+  // Trigger animation
+  setTimeout(() => {
+    notification.classList.add('show')
+  }, 10)
+  
+  // Remove notification after 3 seconds
+  setTimeout(() => {
+    notification.classList.remove('show')
+    setTimeout(() => {
+      notification.remove()
+    }, 300)
+  }, 3000)
 }
 
 cartIcon.addEventListener('mouseleave', () => {

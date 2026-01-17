@@ -135,7 +135,7 @@
     font-weight: 600;
     border-radius: 18px;
     color: #fdf6ea;
-    box-shadow: #00000050 2px 2px 2px 0px;
+    box-shadow: #00000050 2px 2px 2px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
 }
@@ -147,7 +147,7 @@
     font-weight: 600;
     border-radius: 18px;
     color: #fdf6ea;
-    box-shadow: #00000050 2px 2px 2px 0px;
+    box-shadow: #00000050 2px 2px 2px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.7s ease;
 }
@@ -194,7 +194,7 @@ header {
         padding: 15px 20px;
         border-radius: 18px;
         backdrop-filter: blur(10px);
-        box-shadow: 2px 2px 2px 0px rgba(18, 17, 17, 0.386);
+        box-shadow: 2px 2px 2px 0 rgba(18, 17, 17, 0.386);
         margin-left: 192px;
     }
 
@@ -234,7 +234,7 @@ header {
 .mobile .MobileMenu {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     background-color: #475b6459;
     display: none;
     flex-direction: column;
@@ -254,7 +254,7 @@ header {
     color: #fcece6;
     padding: 9px 80px;
     border-radius: 18px;
-    box-shadow: 2px 2px 0px 1px rgba(74, 74, 74, 0.525);
+    box-shadow: 2px 2px 0 1px rgba(74, 74, 74, 0.525);
 }
 
 svg {
@@ -344,7 +344,7 @@ hr {
         background-color: #D63E0D;
         height: 500px;
         padding: 20px;
-        border-radius: 12px 0px 0px 12px;
+        border-radius: 12px 0 0 12px;
         position: relative;
         background: url(../Assset/images/blog-img7.webp);
         display: none;
@@ -384,7 +384,7 @@ hr {
         content: '';
         position: absolute;
         inset: 0;
-        border-radius: 12px 0px 0px 12px;
+        border-radius: 12px 0 0 12px;
         background: linear-gradient(45deg, #511402a0, #d63f0dc3, #511402cb);
     }
 
