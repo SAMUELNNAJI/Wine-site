@@ -176,11 +176,11 @@ function addItemFunction(e) {
   price = price.replace("$", '').trim()
   const item = new CartItem(name, desc, img, price)
   LocalCart.addItemToLocalCart(id, item)
-  
+
   // Get the updated quantity from cart
   const cartItems = LocalCart.getLocalCartItems()
   const quantity = cartItems.get(id).quantity
-  
+
   // Show notification
   showNotification(name, quantity)
   console.log(price)
@@ -196,15 +196,15 @@ function showNotification(productName, quantity) {
       <p>Quantity: <strong>${quantity}</strong></p>
     </div>
   `
-  
+
   // Add to page
   document.body.appendChild(notification)
-  
+
   // Trigger animation
   setTimeout(() => {
     notification.classList.add('show')
   }, 10)
-  
+
   // Remove notification after 3 seconds
   setTimeout(() => {
     notification.classList.remove('show')
@@ -283,6 +283,5 @@ function updateCartUI() {
 }
 
 document.addEventListener('DOMContentLoaded', () => { updateCartUI() })
-
 
 
